@@ -8,7 +8,7 @@ public abstract class BaseScene : InitBase
 {
     public EScene SceneType { get; protected set; } = EScene.Unknown;
 
-    public virtual bool Init()
+    public override bool Init()
     {
         if (base.Init() == false)
             return false;
