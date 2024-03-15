@@ -16,6 +16,8 @@ public class GameScene : BaseScene
         map.transform.position = Vector3.zero;
         map.name = "@BaseMap";
 
+        Managers.Resource.Instantiate("Hero");
+
         // TODO
 
         return true;
