@@ -17,6 +17,10 @@ public class GameScene : BaseScene
         map.name = "@BaseMap";
 
         Hero hero = Managers.Object.Spawn<Hero>(Vector3.zero);
+        hero.CreatureState = ECreatureState.Move;
+
+        CameraController camera = Camera.main.gameObject.GetOrAddComponent<CameraController>();
+        camera.Target = hero;
 
         Managers.UI.ShowBaseUI<UI_Joystick>();
 
