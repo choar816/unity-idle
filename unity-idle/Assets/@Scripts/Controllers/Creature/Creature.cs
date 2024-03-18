@@ -1,13 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Spine.Unity;
 using UnityEngine;
+using UnityEngine.Rendering;
 using static Define;
 
 public class Creature : BaseObject
 {
     public float Speed { get; protected set; } = 1.0f;
 
+    public Data.CreatureData CreatureData { get; private set; }
     public ECreatureType CreatureType { get; protected set; } = ECreatureType.None;
+
+    #region Stats
+    public float Hp { get; set; }
+    public float MaxHp { get; set; }
+    public float MaxHpBonusRate { get; set; }
+    public float HealBonusRate { get; set; }
+    public float HpRegen { get; set; }
+    public float Atk { get; set; }
+    public float AttackRate { get; set; }
+    public float Def { get; set; }
+    public float DefRate { get; set; }
+    public float CriRate { get; set; }
+    public float CriDamage { get; set; }
+    public float DamageReduction { get; set; }
+    public float MoveSpeedRate { get; set; }
+    public float MoveSpeed { get; set; }
+    #endregion
 
     protected ECreatureState _creatureState = ECreatureState.None;
     public virtual ECreatureState CreatureState
@@ -29,8 +49,44 @@ public class Creature : BaseObject
             return false;
 
         ObjectType = EObjectType.Creature;
-        CreatureState = ECreatureState.Idle;
         return true;
+    }
+
+    public virtual void SetInfo(int templateID)
+    {
+        DataTemplateID = templateID;
+
+        CreatureData = Managers.Data.CreatureDic[templateID];
+        gameObject.name = $"{CreatureData.DataId}_{CreatureData.DescriptionTextID}";
+
+        // Collider
+        Collider.offset = new Vector2(CreatureData.ColliderOffsetX, CreatureData.ColliderOffstY);
+        Collider.radius = CreatureData.ColliderRadius;
+
+        // RigidBody
+        RigidBody.mass = CreatureData.Mass;
+
+        // Spine
+        SkeletonAnim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(CreatureData.SkeletonDataID);
+        SkeletonAnim.Initialize(true);
+
+        // Spine SkeletonAnimation은 SpriteRenderer 를 사용하지 않고 MeshRenderer을 사용함.
+        // 그렇기떄문에 2D Sort Axis가 안먹히게 되는데 SortingGroup을 SpriteRenderer, MeshRenderer을 같이 계산함.
+        SortingGroup sg = Util.GetOrAddComponent<SortingGroup>(gameObject);
+        sg.sortingOrder = SortingLayers.CREATURE;
+
+        // Skills
+        // CreatureData.SkillIdList;
+
+        // Stat
+        MaxHp = CreatureData.MaxHp;
+        Hp = CreatureData.MaxHp;
+        Atk = CreatureData.MaxHp;
+        MaxHp = CreatureData.MaxHp;
+        MoveSpeed = CreatureData.MoveSpeed;
+
+        // State
+        CreatureState = ECreatureState.Idle;
     }
 
     protected override void UpdateAnimation()

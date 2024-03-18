@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 21f35c2642e974d22ac2504b3d613157
   m_SerializeEntries:
-  - m_GUID: 26cbcb93034034f688191276bbf69743
-    m_Address: TestData
+  - m_GUID: 0dccbe30a313a4a76a27582806e994d5
+    m_Address: CreatureData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

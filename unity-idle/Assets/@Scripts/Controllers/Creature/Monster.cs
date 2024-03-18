@@ -122,7 +122,7 @@ public class Monster : Creature
         }
         else
         {
-            // Chase
+            // ChaseS
             Vector3 dir = (_target.transform.position - transform.position);
             float distToTargetSqr = dir.sqrMagnitude;
             float attackDistanceSqr = AttackDistance * AttackDistance;
