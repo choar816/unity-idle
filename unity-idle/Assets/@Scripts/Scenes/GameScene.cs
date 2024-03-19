@@ -29,6 +29,11 @@ public class GameScene : BaseScene
             //Managers.Object.Spawn<Monster>(new Vector3Int(1, 1, 0), MONSTER_SLIME_ID);
         }
 
+        {
+            Env env = Managers.Object.Spawn<Env>(new Vector3(0, 2, 0), ENV_TREE1_ID);
+            env.EnvState = EEnvState.Idle;
+        }
+
         // TODO
 
         return true;

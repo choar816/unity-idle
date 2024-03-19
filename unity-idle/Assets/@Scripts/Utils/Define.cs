@@ -58,6 +58,13 @@ public static class Define
         Dead
     }
 
+    public enum EEnvState
+    {
+        Idle,
+        OnDamaged,
+        Dead
+    }
+
     public const int CAMERA_PROJECTION_SIZE = 12;
 
     public const int HERO_WIZARD_ID = 201000;

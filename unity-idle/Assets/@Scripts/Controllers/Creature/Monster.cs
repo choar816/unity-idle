@@ -38,12 +38,19 @@ public class Monster : Creature
             return false;
 
         CreatureType = ECreatureType.Monster;
-        CreatureState = ECreatureState.Idle;
         Speed = 3.0f;
 
         StartCoroutine(CoUpdateAI());
 
         return true;
+    }
+
+    public override void SetInfo(int templateID)
+    {
+        base.SetInfo(templateID);
+
+        // State
+        CreatureState = ECreatureState.Idle;
     }
 
     void Start()
@@ -122,7 +129,7 @@ public class Monster : Creature
         }
         else
         {
-            // ChaseS
+            // Chase
             Vector3 dir = (_target.transform.position - transform.position);
             float distToTargetSqr = dir.sqrMagnitude;
             float attackDistanceSqr = AttackDistance * AttackDistance;
