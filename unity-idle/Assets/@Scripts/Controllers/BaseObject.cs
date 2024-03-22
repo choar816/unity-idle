@@ -69,6 +69,19 @@ public class BaseObject : InitBase
     {
     }
 
+    public void SetRigidBodyVelocity(Vector2 velocity)
+    {
+        if (RigidBody == null)
+            return;
+
+        RigidBody.velocity = velocity;
+
+        if (velocity.x < 0)
+            LookLeft = true;
+        else if (velocity.x > 0)
+            LookLeft = false;
+    }
+
     public void PlayAnimation(int trackIndex, string AnimName, bool loop)
     {
         if (SkeletonAnim == null)
