@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Spine;
 using UnityEngine;
 using static Define;
 
@@ -14,10 +15,10 @@ public class Hero : Creature
         {
             _needArrange = value;
 
-            //if (value)
-            //    ChangeColliderSize(EColliderSize.Big);
-            //else
-            //    TryResizeCollider();
+            if (value)
+                ChangeColliderSize(EColliderSize.Big);
+            else
+                TryResizeCollider();
         }
     }
 
@@ -30,10 +31,10 @@ public class Hero : Creature
             {
                 base.CreatureState = value;
 
-                //if (value == ECreatureState.Move)
-                //    RigidBody.mass = CreatureData.Mass;
-                //else
-                //    RigidBody.mass = CreatureData.Mass * 0.1f;
+                if (value == ECreatureState.Move)
+                    RigidBody.mass = CreatureData.Mass;
+                else
+                    RigidBody.mass = CreatureData.Mass * 0.1f;
             }
         }
     }
@@ -226,8 +227,19 @@ public class Hero : Creature
 
     protected override void UpdateSkill()
     {
+        if (HeroMoveState == EHeroMoveState.ForceMove)
+        {
+            CreatureState = ECreatureState.Move;
+            return;
+        }
 
+        if (_target.IsValid() == false)
+        {
+            CreatureState = ECreatureState.Move;
+            return;
+        }
     }
+
     protected override void UpdateDead()
     {
 
@@ -289,21 +301,55 @@ public class Hero : Creature
     }
     #endregion
 
+    private void TryResizeCollider()
+    {
+        // 일단 충돌체 아주 작게.
+        ChangeColliderSize(EColliderSize.Small);
+
+        foreach (var hero in Managers.Object.Heroes)
+        {
+            if (hero.HeroMoveState == EHeroMoveState.ReturnToCamp)
+                return;
+        }
+
+        // ReturnToCamp가 한 명도 없으면 콜라이더 조정.
+        foreach (var hero in Managers.Object.Heroes)
+        {
+            // 단 채집이나 전투중이면 스킵.
+            if (hero.CreatureState == ECreatureState.Idle)
+                hero.ChangeColliderSize(EColliderSize.Big);
+        }
+    }
+
     private void HandleOnJoystickStateChanged(EJoystickState joystickState)
     {
         switch (joystickState)
         {
-            case Define.EJoystickState.PointerDown:
+            case EJoystickState.PointerDown:
 				HeroMoveState = EHeroMoveState.ForceMove;
                 break;
-            case Define.EJoystickState.Drag:
+            case EJoystickState.Drag:
 				HeroMoveState = EHeroMoveState.ForceMove;
                 break;
-            case Define.EJoystickState.PointerUp:
+            case EJoystickState.PointerUp:
 				HeroMoveState = EHeroMoveState.None;
                 break;
             default:
                 break;
         }
+    }
+
+    public override void OnAnimEventHandler(TrackEntry trackEntry, Spine.Event e)
+    {
+        base.OnAnimEventHandler(trackEntry, e);
+
+        // TODO
+        CreatureState = ECreatureState.Move;
+
+        // Skill
+        if (_target.IsValid() == false)
+            return;
+
+        //_target.OnDamaged(this);
     }
 }

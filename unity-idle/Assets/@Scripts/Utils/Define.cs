@@ -90,6 +90,13 @@ public static class Define
         Projectile = 10,
     }
 
+    public enum EColliderSize
+    {
+        Small,
+        Normal,
+        Big
+    }
+
     public const int CAMERA_PROJECTION_SIZE = 12;
 
     public const int HERO_WIZARD_ID = 201000;

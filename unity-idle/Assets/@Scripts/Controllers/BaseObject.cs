@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Spine;
 using Spine.Unity;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -38,16 +39,6 @@ public class BaseObject : InitBase
         RigidBody = GetComponent<Rigidbody2D>();
 
         return true;
-    }
-
-    public void TranslateEx(Vector3 dir)
-    {
-        transform.Translate(dir);
-
-        if (dir.x < 0)
-            LookLeft = true;
-        else if (dir.x > 0)
-            LookLeft = false;
     }
 
     #region Spine
@@ -104,6 +95,11 @@ public class BaseObject : InitBase
             return;
 
         SkeletonAnim.Skeleton.ScaleX = flag ? -1 : 1;
+    }
+
+    public virtual void OnAnimEventHandler(TrackEntry trackEntry, Spine.Event e)
+    {
+        Debug.Log("OnAnimEventHandler");
     }
     #endregion
 }

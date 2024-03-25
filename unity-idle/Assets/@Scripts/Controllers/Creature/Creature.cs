@@ -68,6 +68,13 @@ public class Creature : BaseObject
         SkeletonAnim.skeletonDataAsset = Managers.Resource.Load<SkeletonDataAsset>(CreatureData.SkeletonDataID);
         SkeletonAnim.Initialize(true);
 
+        // Register AnimEvent
+        if (SkeletonAnim.AnimationState != null)
+        {
+            SkeletonAnim.AnimationState.Event -= OnAnimEventHandler;
+            SkeletonAnim.AnimationState.Event += OnAnimEventHandler;
+        }
+
         // Spine SkeletonAnimation은 SpriteRenderer 를 사용하지 않고 MeshRenderer을 사용함.
         // 그렇기떄문에 2D Sort Axis가 안먹히게 되는데 SortingGroup을 SpriteRenderer, MeshRenderer을 같이 계산함.
         SortingGroup sg = Util.GetOrAddComponent<SortingGroup>(gameObject);
@@ -105,6 +112,22 @@ public class Creature : BaseObject
                 RigidBody.simulated = false;
                 break;
             default:
+                break;
+        }
+    }
+
+    public void ChangeColliderSize(EColliderSize size = EColliderSize.Normal)
+    {
+        switch (size)
+        {
+            case EColliderSize.Small:
+                Collider.radius = CreatureData.ColliderRadius * 0.8f;
+                break;
+            case EColliderSize.Normal:
+                Collider.radius = CreatureData.ColliderRadius;
+                break;
+            case EColliderSize.Big:
+                Collider.radius = CreatureData.ColliderRadius * 1.2f;
                 break;
         }
     }
