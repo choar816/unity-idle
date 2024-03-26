@@ -350,6 +350,6 @@ public class Hero : Creature
         if (_target.IsValid() == false)
             return;
 
-        //_target.OnDamaged(this);
+        _target.OnDamaged(this);
     }
 }
