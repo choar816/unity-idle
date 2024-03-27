@@ -54,7 +54,11 @@ public class Creature : BaseObject
     {
         DataTemplateID = templateID;
 
-        CreatureData = Managers.Data.CreatureDic[templateID];
+        if (CreatureType == ECreatureType.Hero)
+            CreatureData = Managers.Data.HeroDic[templateID];
+        else
+            CreatureData = Managers.Data.MonsterDic[templateID];
+
         gameObject.name = $"{CreatureData.DataId}_{CreatureData.DescriptionTextID}";
 
         // Collider
