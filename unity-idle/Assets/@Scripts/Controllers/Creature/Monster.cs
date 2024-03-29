@@ -58,9 +58,7 @@ public class Monster : Creature
     }
 
     #region AI
-    public float SearchDistance { get; private set; } = 8.0f;
     public float AttackDistance { get; private set; } = 4.0f;
-    Creature _target;
     Vector3 _destPos;
     Vector3 _initPos;
 
@@ -79,36 +77,18 @@ public class Monster : Creature
         }
 
         // Search Player
+        Creature creature = FindClosestInRange(MONSTER_SEARCH_DISTANCE, Managers.Object.Heroes, func: IsValid) as Creature;
+        if (creature != null)
         {
-            Creature target = null;
-            float bestDistanceSqr = float.MaxValue;
-            float searchDistanceSqr = SearchDistance * SearchDistance;
-
-            foreach (Hero hero in Managers.Object.Heroes)
-            {
-                Vector3 dir = hero.transform.position - transform.position;
-                float distToTargetSqr = dir.sqrMagnitude;
-
-                if (distToTargetSqr > searchDistanceSqr)
-                    continue;
-
-                if (distToTargetSqr > bestDistanceSqr)
-                    continue;
-
-                target = hero;
-                bestDistanceSqr = distToTargetSqr;
-            }
-
-            _target = target;
-
-            if (_target != null)
-                CreatureState = ECreatureState.Move;
+            Target = creature;
+            CreatureState = ECreatureState.Move;
+            return;
         }
     }
 
     protected override void UpdateMove()
     {
-        if (_target == null)
+        if (Target == null)
         {
             // Patrol or Return
             Vector3 dir = (_destPos - transform.position);
@@ -124,29 +104,14 @@ public class Monster : Creature
         else
         {
             // Chase
-            Vector3 dir = (_target.transform.position - transform.position);
-            float distToTargetSqr = dir.sqrMagnitude;
-            float attackDistanceSqr = AttackDistance * AttackDistance;
+            ChaseOrAttackTarget(MONSTER_SEARCH_DISTANCE, 5.0f);
 
-            if (distToTargetSqr < attackDistanceSqr)
+            // 너무 멀어지면 포기.
+            if (Target.IsValid() == false)
             {
-                // 공격 범위 이내로 들어왔으면 공격.
-                CreatureState = ECreatureState.Skill;
-                StartWait(2.0f);
-            }
-            else
-            {
-                // 공격 범위 밖이라면 추적.
-                SetRigidBodyVelocity(dir.normalized * MoveSpeed);
-
-                // 너무 멀어지면 포기.
-                float searchDistanceSqr = SearchDistance * SearchDistance;
-                if (distToTargetSqr > searchDistanceSqr)
-                {
-                    _destPos = _initPos;
-                    _target = null;
-                    CreatureState = ECreatureState.Move;
-                }
+                Target = null;
+                _destPos = _initPos;
+                return;
             }
         }
     }
