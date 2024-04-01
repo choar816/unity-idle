@@ -82,7 +82,7 @@ namespace Data
     {
         public int DataId;
         public string Name;
-        public string ClassName;
+        public string ClassName; // e.g. NormalAttack
         public string ComponentName;
         public string Description;
         public int ProjectileId;

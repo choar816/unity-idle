@@ -41,6 +41,15 @@ public class BaseObject : InitBase
         return true;
     }
 
+    public void LookAtTarget(BaseObject target)
+    {
+        Vector2 dir = target.transform.position - transform.position;
+        if (dir.x < 0)
+            LookLeft = true;
+        else
+            LookLeft = false;
+    }
+
     #region Battle
     public virtual void OnDamaged(BaseObject attacker)
     {
