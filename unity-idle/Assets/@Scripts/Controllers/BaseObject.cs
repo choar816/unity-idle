@@ -51,12 +51,12 @@ public class BaseObject : InitBase
     }
 
     #region Battle
-    public virtual void OnDamaged(BaseObject attacker)
+    public virtual void OnDamaged(BaseObject attacker, SkillBase skill)
     {
 
     }
 
-    public virtual void OnDead(BaseObject attacker)
+    public virtual void OnDead(BaseObject attacker, SkillBase skill)
     {
 
     }

@@ -39,7 +39,7 @@ public class NormalAttack : SkillBase
         if (SkillData.ProjectileId == 0)
         {
             // Melee
-            //Owner.Target.OnDamaged(Owner, this);
+            Owner.Target.OnDamaged(Owner, this);
         }
         else
         {

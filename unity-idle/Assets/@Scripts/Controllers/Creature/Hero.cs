@@ -109,15 +109,6 @@ public class Hero : Creature
     }
 
     #region AI
-    public float AttackDistance
-    {
-        get
-        {
-            float targetRadius = (Target.IsValid() ? Target.ColliderRadius : 0);
-            return ColliderRadius + targetRadius + 2.0f;
-        }
-    }
-
     protected override void UpdateIdle()
     {
         SetRigidBodyVelocity(Vector2.zero);
@@ -180,7 +171,9 @@ public class Hero : Creature
                 return;
             }
 
-            ChaseOrAttackTarget(AttackDistance, HERO_SEARCH_DISTANCE);
+            SkillBase skill = Skills.GetReadySkill();
+            ChaseOrAttackTarget(HERO_SEARCH_DISTANCE, skill);
+            //ChaseOrAttackTarget(AttackDistance, HERO_SEARCH_DISTANCE);
             return;
         }
 
@@ -205,7 +198,8 @@ public class Hero : Creature
                 return;
             }
 
-            ChaseOrAttackTarget(AttackDistance, HERO_SEARCH_DISTANCE);
+            SkillBase skill = Skills.GetReadySkill();
+            ChaseOrAttackTarget(HERO_SEARCH_DISTANCE, skill);
             return;
         }
 
@@ -299,14 +293,5 @@ public class Hero : Creature
     public override void OnAnimEventHandler(TrackEntry trackEntry, Spine.Event e)
     {
         base.OnAnimEventHandler(trackEntry, e);
-
-        // TODO
-        CreatureState = ECreatureState.Move;
-
-        // Skill
-        if (Target.IsValid() == false)
-            return;
-
-        Target.OnDamaged(this);
     }
 }
