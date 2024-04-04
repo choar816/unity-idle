@@ -21,7 +21,8 @@ public class GameScene : BaseScene
         for (int i = 0; i < 5; i++)
         {
             //int heroTemplateID = HERO_WIZARD_ID + Random.Range(0, 5);
-            int heroTemplateID = HERO_KNIGHT_ID;
+            //int heroTemplateID = HERO_GOBLIN_ID;
+            int heroTemplateID = HERO_WIZARD_ID;
             Hero hero = Managers.Object.Spawn<Hero>(new Vector3Int(-10 + Random.Range(-5, 5), -5 + Random.Range(-5, 5), 0), heroTemplateID);
         }
 
