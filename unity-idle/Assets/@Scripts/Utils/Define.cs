@@ -117,6 +117,10 @@ public static class Define
 
     public const int ENV_TREE1_ID = 300001;
     public const int ENV_TREE2_ID = 301000;
+
+    public const char MAP_TOOL_WALL = '0';
+    public const char MAP_TOOL_NONE = '1';
+    public const char MAP_TOOL_SEMI_WALL = '2';
 }
 
 public static class AnimName
