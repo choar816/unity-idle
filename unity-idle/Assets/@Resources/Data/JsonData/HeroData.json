@@ -25,8 +25,7 @@
       "AnimatorName": null,
       "SkillIdList": [
         10002
-      ],
-      "DropItemId": 0
+      ]
     },
     {
       "DataId": 201001,
@@ -53,8 +52,7 @@
       "AnimatorName": null,
       "SkillIdList": [
         10001
-      ],
-      "DropItemId": 0
+      ]
     },
     {
       "DataId": 201002,
@@ -81,8 +79,7 @@
       "AnimatorName": null,
       "SkillIdList": [
         10002
-      ],
-      "DropItemId": 0
+      ]
     },
     {
       "DataId": 201003,
@@ -109,8 +106,7 @@
       "AnimatorName": null,
       "SkillIdList": [
         10001
-      ],
-      "DropItemId": 0
+      ]
     },
     {
       "DataId": 201004,
@@ -137,8 +133,7 @@
       "AnimatorName": null,
       "SkillIdList": [
         10001
-      ],
-      "DropItemId": 0
+      ]
     }
   ]
 }
