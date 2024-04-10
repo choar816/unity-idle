@@ -97,6 +97,21 @@ public static class Define
         Big
     }
 
+    public enum EFindPathResult
+    {
+        Fail_LerpCell,
+        Fail_NoPath,
+        Fail_MoveTo,
+        Success,
+    }
+
+    public enum ECellCollisionType
+    {
+        None,
+        SemiWall,
+        Wall,
+    }
+
     public const int CAMERA_PROJECTION_SIZE = 12;
 
     // HARD CODING
