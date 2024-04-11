@@ -88,6 +88,26 @@ public class MapManager
         }
     }
 
+    public bool MoveTo(Creature obj, Vector3Int cellPos, bool forceMove = false)
+    {
+        if (CanGo(cellPos) == false)
+            return false;
+
+        // 기존 좌표에 있던 오브젝트를 밀어준다.
+        // (단, 처음 신청했으면 해당 CellPos의 오브젝트가 본인이 아닐 수도 있음)
+        RemoveObject(obj);
+
+        // 새 좌표에 오브젝트를 등록한다.
+        AddObject(obj, cellPos);
+
+        // 셀 좌표 이동
+        obj.SetCellPos(cellPos, forceMove);
+
+        //Debug.Log($"Move To {cellPos}");
+
+        return true;
+    }
+
     #region Helpers
     public BaseObject GetObject(Vector3Int cellPos)
     {
