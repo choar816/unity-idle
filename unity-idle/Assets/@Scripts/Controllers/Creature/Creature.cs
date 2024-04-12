@@ -277,20 +277,20 @@ public class Creature : BaseObject
             return EFindPathResult.Fail_LerpCell;
 
         // A*
-        //List<Vector3Int> path = Managers.Map.FindPath(CellPos, destCellPos, maxDepth);
-        //if (path.Count < 2)
-        //    return EFindPathResult.Fail_NoPath;
+        List<Vector3Int> path = Managers.Map.FindPath(CellPos, destCellPos, maxDepth);
+        if (path.Count < 2)
+            return EFindPathResult.Fail_NoPath;
 
-        //if (forceMoveCloser)
-        //{
-        //    Vector3Int diff1 = CellPos - destCellPos;
-        //    Vector3Int diff2 = path[1] - destCellPos;
-        //    if (diff1.sqrMagnitude <= diff2.sqrMagnitude)
-        //        return EFindPathResult.Fail_NoPath;
-        //}
+        if (forceMoveCloser)
+        {
+            Vector3Int diff1 = CellPos - destCellPos;
+            Vector3Int diff2 = path[1] - destCellPos;
+            if (diff1.sqrMagnitude <= diff2.sqrMagnitude)
+                return EFindPathResult.Fail_NoPath;
+        }
 
-        //Vector3Int dirCellPos = path[1] - CellPos;
-        Vector3Int dirCellPos = destCellPos - CellPos;
+        Vector3Int dirCellPos = path[1] - CellPos;
+        //Vector3Int dirCellPos = destCellPos - CellPos;
         Vector3Int nextPos = CellPos + dirCellPos;
 
         if (Managers.Map.MoveTo(this, nextPos) == false)

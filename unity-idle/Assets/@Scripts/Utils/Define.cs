@@ -65,7 +65,8 @@ public static class Define
         TargetMonster,
         CollectEnv,
         ReturnToCamp,
-        ForceMove
+        ForceMove,
+		ForcePath
     }
 
     public enum EEnvState
