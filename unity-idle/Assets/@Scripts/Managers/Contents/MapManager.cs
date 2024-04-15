@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using static Define;
 
 public class MapManager
@@ -38,7 +39,7 @@ public class MapManager
 
         ParseCollisionData(map, mapName);
 
-        //SpawnObjectsByData(map, mapName);
+        SpawnObjectsByData(map, mapName);
     }
 
     public void DestroyMap()
@@ -84,6 +85,45 @@ public class MapManager
                     case Define.MAP_TOOL_SEMI_WALL:
                         _collision[x, y] = ECellCollisionType.SemiWall;
                         break;
+                }
+            }
+        }
+    }
+
+    void SpawnObjectsByData(GameObject map, string mapName, string tilemap = "Tilemap_Object")
+    {
+        Tilemap tm = Util.FindChild<Tilemap>(map, tilemap, true);
+
+        if (tm != null)
+            tm.gameObject.SetActive(false);
+
+        for (int y = tm.cellBounds.yMax; y >= tm.cellBounds.yMin; y--)
+        {
+            for (int x = tm.cellBounds.xMin; x <= tm.cellBounds.xMax; x++)
+            {
+                Vector3Int cellPos = new Vector3Int(x, y, 0);
+                CustomTile tile = tm.GetTile(cellPos) as CustomTile;
+                if (tile == null)
+                    continue;
+
+                if (tile.ObjectType == Define.EObjectType.Env)
+                {
+                    Vector3 worldPos = Cell2World(cellPos);
+                    Env env = Managers.Object.Spawn<Env>(worldPos, tile.DataTemplateID);
+                    env.SetCellPos(cellPos, true);
+                }
+                else
+                {
+                    if (tile.CreatureType == Define.ECreatureType.Monster)
+                    {
+                        Vector3 worldPos = Cell2World(cellPos);
+                        Monster monster = Managers.Object.Spawn<Monster>(worldPos, tile.DataTemplateID);
+                        monster.SetCellPos(cellPos, true);
+                    }
+                    else if (tile.CreatureType == Define.ECreatureType.Npc)
+                    {
+
+                    }
                 }
             }
         }
