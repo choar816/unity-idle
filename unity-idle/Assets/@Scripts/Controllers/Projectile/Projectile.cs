@@ -47,7 +47,7 @@ public class Projectile : BaseObject
         if (ProjectileMotion != null)
             Destroy(ProjectileMotion);
 
-        string componentName = skill.SkillData.ComponentName;
+        string componentName = ProjectileData.ComponentName;
         ProjectileMotion = gameObject.AddComponent(Type.GetType(componentName)) as ProjectileMotionBase;
 
         StraightMotion straightMotion = ProjectileMotion as StraightMotion;
