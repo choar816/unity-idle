@@ -175,6 +175,10 @@ public class Creature : BaseObject
         if (creature == null)
             return;
 
+        // TEMP: 플레이어 무적
+        if (CreatureType == ECreatureType.Hero)
+            return;
+
         float finalDamage = creature.Atk; // TODO
         Hp = Mathf.Clamp(Hp - finalDamage, 0, MaxHp);
 
