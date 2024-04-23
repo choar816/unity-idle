@@ -27,6 +27,13 @@ public class ObjectManager
 	public Transform EnvRoot { get { return GetRootTransform("@Envs"); } }
     #endregion
 
+    public void ShowDamageFont(Vector2 position, float damage, Transform parent, bool isCritical = false)
+    {
+        GameObject go = Managers.Resource.Instantiate("DamageFont", pooling: true);
+        DamageFont damageText = go.GetComponent<DamageFont>();
+        damageText.SetInfo(position, damage, parent, isCritical);
+    }
+
     public T Spawn<T>(Vector3 position, int templateID) where T : BaseObject
     {
         string prefabName = typeof(T).Name;
