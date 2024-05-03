@@ -17,14 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 5e20581565e9c49dfbc04c377c3cd0f5
   m_SerializeEntries:
-  - m_GUID: 287bf67f9794be145b580ccc6a4d3a65
-    m_Address: 004_SkeletonData
+  - m_GUID: e08eef4aa88f9d54892b3030c980a1c4
+    m_Address: 006_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b3216f9a8939d554ca2ebadaa61f6b22
-    m_Address: 005_SkeletonData
+  - m_GUID: c7c834880c8d8774da453c252b4185a6
+    m_Address: 022_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
@@ -77,20 +77,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 76d3eb1c77a7e3c4180773fd08350fc0
-    m_Address: 003_SkeletonData
+  - m_GUID: b473b514912b8804aa13a19894b6d4eb
+    m_Address: 020_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9b77f658e56e14e48a2f5aeda6bead62
-    m_Address: 002_SkeletonData
+  - m_GUID: 287bf67f9794be145b580ccc6a4d3a65
+    m_Address: 004_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 82120fbb903c40d4f88f7b70503c90e2
-    m_Address: 001_SkeletonData
+  - m_GUID: b3216f9a8939d554ca2ebadaa61f6b22
+    m_Address: 005_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
@@ -139,6 +139,24 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: db99d3af36e18d94fa4d82ce5255f856
     m_Address: buff_attack_speed_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76d3eb1c77a7e3c4180773fd08350fc0
+    m_Address: 003_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b77f658e56e14e48a2f5aeda6bead62
+    m_Address: 002_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82120fbb903c40d4f88f7b70503c90e2
+    m_Address: 001_SkeletonData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

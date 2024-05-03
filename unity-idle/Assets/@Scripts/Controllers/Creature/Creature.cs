@@ -127,6 +127,10 @@ public class Creature : BaseObject
             case ECreatureState.Move:
                 PlayAnimation(0, AnimName.MOVE, true);
                 break;
+            case ECreatureState.OnDamaged:
+                PlayAnimation(0, AnimName.IDLE, true);
+                Skills.CurrentSkill.CancelSkill();
+                break;
             case ECreatureState.Dead:
                 PlayAnimation(0, AnimName.DEAD, true);
                 RigidBody.simulated = false;
@@ -153,6 +157,9 @@ public class Creature : BaseObject
                     break;
                 case ECreatureState.Skill:
                     UpdateSkill();
+                    break;
+                case ECreatureState.OnDamaged:
+                    UpdateOnDamaged();
                     break;
                 case ECreatureState.Dead:
                     UpdateDead();
@@ -199,6 +206,8 @@ public class Creature : BaseObject
 
         StartWait(delay);
     }
+
+    protected virtual void UpdateOnDamaged() { }
 
     protected virtual void UpdateDead() { }
     #endregion
@@ -247,7 +256,12 @@ public class Creature : BaseObject
         {
             OnDead(attacker, skill);
             CreatureState = ECreatureState.Dead;
+            return;
         }
+
+        // 스킬에 따른 Effect 적용
+        if (skill.SkillData.EffectIds != null)
+            Effects.GenerateEffects(skill.SkillData.EffectIds.ToArray(), EEffectSpawnType.Skill);
     }
 
     public override void OnDead(BaseObject attacker, SkillBase skill)

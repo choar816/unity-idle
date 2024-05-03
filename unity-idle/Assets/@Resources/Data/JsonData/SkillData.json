@@ -333,7 +333,7 @@
     {
       "DataId": 10018,
       "Name": "사자수인1",
-      "ClassName": "AreaAirbone",
+      "ClassName": "AreaAirborne",
       "Description": "자리에서 뛰어올라 바닥을 내려찍으며 자신을 중심으로 광역피해를 주고 적을 띄운다.",
       "ProjectileId": 0,
       "PrefabLabel": "SpellIndicator",
