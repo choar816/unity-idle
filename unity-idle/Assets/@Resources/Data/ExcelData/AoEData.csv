@@ -1,0 +1,22 @@
+﻿DataId,Name,ClassName,SkeletonDataId,SoundLabel,Duration,alleyEffects,EnemyEffects,AnimName
+80001,맹독확산1 AOE,PoisonSpreadAoE,loren_skill_1_SkeletonData,,5,,60006,idle
+80002,맹독확산2 AOE,PoisonSpreadAoE,loren_skill_1_SkeletonData,,5,,60007,idle
+80003,맹독확산3 AOE,PoisonSpreadAoE,loren_skill_1_SkeletonData,,5,,60008,idle
+80004,냉기확산1 AOE,ColdSpreadAoE,loren_skill_2_SkeletonData,,0.5,,60009,idle
+80005,냉기확산2 AOE,ColdSpreadAoE,loren_skill_2_SkeletonData,,0.5,,60010,idle
+80006,냉기확산3 AOE,ColdSpreadAoE,loren_skill_2_SkeletonData,,0.5,,60011,idle
+80007,화염검 AOE,ConeShapeAoE,owen_skill_1_SkeletonData,,1,,60012,skill_a_small
+80008,화염검 AOE,ConeShapeAoE,owen_skill_1_SkeletonData,,1,,60013,skill_a_normal
+80009,화염검 AOE,ConeShapeAoE,owen_skill_1_SkeletonData,,1,,60014,skill_a_big
+80010,다중화염검 AOE,CircleShapeAoE,owen_skill_2_SkeletonData,,1,,,skill_b_small
+80011,다중화염검 AOE,CircleShapeAoE,owen_skill_2_SkeletonData,,1,,,skill_b_normal
+80012,다중화염검 AOE,CircleShapeAoE,owen_skill_2_SkeletonData,,1,,,skill_b_big
+80013,인형의 난타 1,CircleShapeAoE,veti_skill_1_SkeletonData,,,,,skill_a_small
+80014,인형의 난타 2,CircleShapeAoE,veti_skill_1_SkeletonData,,,,,skill_a_normal
+80015,인형의 난타 3,CircleShapeAoE,veti_skill_1_SkeletonData,,,,,skill_a_big
+80016,인형의 브레스 1,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60012,skill_a_small
+80017,인형의 브레스 2,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60013,skill_a_normal
+80018,인형의 브레스 3,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60014,skill_a_big
+80019,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_small
+80020,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_normal
+80021,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_big

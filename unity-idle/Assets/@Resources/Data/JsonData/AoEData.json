@@ -1,0 +1,268 @@
+{
+  "aoes": [
+    {
+      "DataId": 80001,
+      "Name": "맹독확산1 AOE",
+      "ClassName": "PoisonSpreadAoE",
+      "SkeletonDataID": "loren_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 5.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60006
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80002,
+      "Name": "맹독확산2 AOE",
+      "ClassName": "PoisonSpreadAoE",
+      "SkeletonDataID": "loren_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 5.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60007
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80003,
+      "Name": "맹독확산3 AOE",
+      "ClassName": "PoisonSpreadAoE",
+      "SkeletonDataID": "loren_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 5.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60008
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80004,
+      "Name": "냉기확산1 AOE",
+      "ClassName": "ColdSpreadAoE",
+      "SkeletonDataID": "loren_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.5,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60009
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80005,
+      "Name": "냉기확산2 AOE",
+      "ClassName": "ColdSpreadAoE",
+      "SkeletonDataID": "loren_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.5,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60010
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80006,
+      "Name": "냉기확산3 AOE",
+      "ClassName": "ColdSpreadAoE",
+      "SkeletonDataID": "loren_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.5,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60011
+      ],
+      "AnimName": "idle"
+    },
+    {
+      "DataId": 80007,
+      "Name": "화염검 AOE",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60012
+      ],
+      "AnimName": "skill_a_small"
+    },
+    {
+      "DataId": 80008,
+      "Name": "화염검 AOE",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60013
+      ],
+      "AnimName": "skill_a_normal"
+    },
+    {
+      "DataId": 80009,
+      "Name": "화염검 AOE",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60014
+      ],
+      "AnimName": "skill_a_big"
+    },
+    {
+      "DataId": 80010,
+      "Name": "다중화염검 AOE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "owen_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_b_small"
+    },
+    {
+      "DataId": 80011,
+      "Name": "다중화염검 AOE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "owen_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_b_normal"
+    },
+    {
+      "DataId": 80012,
+      "Name": "다중화염검 AOE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "owen_skill_2_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 1.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_b_big"
+    },
+    {
+      "DataId": 80013,
+      "Name": "인형의 난타 1",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_a_small"
+    },
+    {
+      "DataId": 80014,
+      "Name": "인형의 난타 2",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_a_normal"
+    },
+    {
+      "DataId": 80015,
+      "Name": "인형의 난타 3",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": null,
+      "AnimName": "skill_a_big"
+    },
+    {
+      "DataId": 80016,
+      "Name": "인형의 브레스 1",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60012
+      ],
+      "AnimName": "skill_a_small"
+    },
+    {
+      "DataId": 80017,
+      "Name": "인형의 브레스 2",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60013
+      ],
+      "AnimName": "skill_a_normal"
+    },
+    {
+      "DataId": 80018,
+      "Name": "인형의 브레스 3",
+      "ClassName": "ConeShapeAoE",
+      "SkeletonDataID": "owen_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": null,
+      "EnemyEffects": [
+        60014
+      ],
+      "AnimName": "skill_a_big"
+    },
+    {
+      "DataId": 80019,
+      "Name": "권법연타 AoE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": [
+        61001,
+        61005
+      ],
+      "EnemyEffects": null,
+      "AnimName": "skill_a_small"
+    },
+    {
+      "DataId": 80020,
+      "Name": "권법연타 AoE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": [
+        61001,
+        61005
+      ],
+      "EnemyEffects": null,
+      "AnimName": "skill_a_normal"
+    },
+    {
+      "DataId": 80021,
+      "Name": "권법연타 AoE",
+      "ClassName": "CircleShapeAoE",
+      "SkeletonDataID": "veti_skill_1_SkeletonData",
+      "SoundLabel": null,
+      "Duration": 0.0,
+      "AllyEffects": [
+        61001,
+        61005
+      ],
+      "EnemyEffects": null,
+      "AnimName": "skill_a_big"
+    }
+  ]
+}
