@@ -1,0 +1,416 @@
+{
+  "skeleton": {
+	"hash": "VQiDKYw1Vmo",
+	"spine": "4.1.24",
+	"x": -128.45,
+	"y": -100.97,
+	"width": 253,
+	"height": 196,
+	"images": "./texture/",
+	"audio": "C:/RookissArt/Art/ani/effect/hero_skill/veti_skill_1"
+  },
+  "bones": [
+	{
+	  "name": "root"
+	},
+	{
+	  "name": "01",
+	  "parent": "root",
+	  "x": -0.16,
+	  "y": 17.06
+	},
+	{
+	  "name": "02",
+	  "parent": "root",
+	  "x": 14.73,
+	  "y": 16.49
+	},
+	{
+	  "name": "03",
+	  "parent": "root",
+	  "x": 23.32,
+	  "y": 6.75
+	}
+  ],
+  "slots": [
+	{
+	  "name": "03",
+	  "bone": "03"
+	},
+	{
+	  "name": "02",
+	  "bone": "02"
+	},
+	{
+	  "name": "01",
+	  "bone": "01",
+	  "attachment": "01"
+	}
+  ],
+  "skins": [
+	{
+	  "name": "default",
+	  "attachments": {
+		"01": {
+		  "01": {
+			"x": -1.79,
+			"y": -20.03,
+			"width": 253,
+			"height": 196
+		  }
+		},
+		"02": {
+		  "02": {
+			"x": -16.68,
+			"y": -19.45,
+			"width": 361,
+			"height": 280
+		  }
+		},
+		"03": {
+		  "03": {
+			"x": -25.27,
+			"y": -9.72,
+			"width": 497,
+			"height": 386
+		  }
+		}
+	  }
+	}
+  ],
+  "events": {
+	"event_attack": {}
+  },
+  "animations": {
+	"skill_a_small": {
+	  "slots": {
+		"01": {
+		  "attachment": [
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 2.3333
+			}
+		  ]
+		},
+		"02": {
+		  "attachment": [
+			{
+			  "time": 0.7333,
+			  "name": "02"
+			},
+			{
+			  "time": 1.3333
+			}
+		  ]
+		},
+		"03": {
+		  "rgba": [
+			{
+			  "time": 1.8333,
+			  "color": "ffffff87"
+			},
+			{
+			  "time": 2.1667,
+			  "color": "ffffff00"
+			}
+		  ],
+		  "attachment": [
+			{
+			  "time": 1.3333,
+			  "name": "03"
+			}
+		  ]
+		}
+	  },
+	  "bones": {
+		"root": {
+		  "translate": [
+			{},
+			{
+			  "time": 0.0667,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.1333,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 0.8,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.8667,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 1.3333
+			},
+			{
+			  "time": 1.4,
+			  "y": -9.12
+			},
+			{
+			  "time": 1.4667
+			}
+		  ]
+		},
+		"01": {
+		  "scale": [
+			{
+			  "x": 0.774,
+			  "y": 0.774,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.0667,
+			  "x": 0.774,
+			  "y": 0.774
+			},
+			{
+			  "time": 0.1333
+			}
+		  ]
+		}
+	  },
+	  "events": [
+		{
+		  "time": 0.0667,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 0.8,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 1.4,
+		  "name": "event_attack"
+		}
+	  ]
+	},
+	"skill_a_normal": {
+	  "slots": {
+		"01": {
+		  "attachment": [
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 2.3333
+			}
+		  ]
+		},
+		"02": {
+		  "attachment": [
+			{
+			  "time": 0.7333,
+			  "name": "02"
+			},
+			{
+			  "time": 1.3333
+			}
+		  ]
+		},
+		"03": {
+		  "rgba": [
+			{
+			  "time": 1.8333,
+			  "color": "ffffff87"
+			},
+			{
+			  "time": 2.1667,
+			  "color": "ffffff00"
+			}
+		  ],
+		  "attachment": [
+			{
+			  "time": 1.3333,
+			  "name": "03"
+			}
+		  ]
+		}
+	  },
+	  "bones": {
+		"root": {
+		  "translate": [
+			{},
+			{
+			  "time": 0.0667,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.1333,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 0.8,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.8667,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 1.3333
+			},
+			{
+			  "time": 1.4,
+			  "y": -9.12
+			},
+			{
+			  "time": 1.4667
+			}
+		  ]
+		},
+		"01": {
+		  "scale": [
+			{
+			  "x": 0.774,
+			  "y": 0.774,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.0667,
+			  "x": 0.774,
+			  "y": 0.774
+			},
+			{
+			  "time": 0.1333
+			}
+		  ]
+		}
+	  },
+	  "events": [
+		{
+		  "time": 0.0667,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 0.8,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 1.4,
+		  "name": "event_attack"
+		}
+	  ]
+	},
+	"skill_a_big": {
+	  "slots": {
+		"01": {
+		  "attachment": [
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 2.3333
+			}
+		  ]
+		},
+		"02": {
+		  "attachment": [
+			{
+			  "time": 0.7333,
+			  "name": "02"
+			},
+			{
+			  "time": 1.3333
+			}
+		  ]
+		},
+		"03": {
+		  "rgba": [
+			{
+			  "time": 1.8333,
+			  "color": "ffffff87"
+			},
+			{
+			  "time": 2.1667,
+			  "color": "ffffff00"
+			}
+		  ],
+		  "attachment": [
+			{
+			  "time": 1.3333,
+			  "name": "03"
+			}
+		  ]
+		}
+	  },
+	  "bones": {
+		"root": {
+		  "translate": [
+			{},
+			{
+			  "time": 0.0667,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.1333,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.7333
+			},
+			{
+			  "time": 0.8,
+			  "y": -6.84
+			},
+			{
+			  "time": 0.8667,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 1.3333
+			},
+			{
+			  "time": 1.4,
+			  "y": -9.12
+			},
+			{
+			  "time": 1.4667
+			}
+		  ]
+		},
+		"01": {
+		  "scale": [
+			{
+			  "x": 0.774,
+			  "y": 0.774,
+			  "curve": "stepped"
+			},
+			{
+			  "time": 0.0667,
+			  "x": 0.774,
+			  "y": 0.774
+			},
+			{
+			  "time": 0.1333
+			}
+		  ]
+		}
+	  },
+	  "events": [
+		{
+		  "time": 0.0667,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 0.8,
+		  "name": "event_attack"
+		},
+		{
+		  "time": 1.4,
+		  "name": "event_attack"
+		}
+	  ]
+	}
+  }
+}

@@ -1,0 +1,10 @@
+loren_skill_1.png
+size:876,476
+filter:Linear,Linear
+pma:true
+01
+bounds:2,2,547,471
+offsets:3,3,553,477
+02
+bounds:551,165,323,308
+offsets:3,3,329,314

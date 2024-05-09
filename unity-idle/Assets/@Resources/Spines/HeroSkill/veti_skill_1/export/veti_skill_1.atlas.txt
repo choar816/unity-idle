@@ -1,0 +1,13 @@
+veti_skill_1.png
+size:536,596
+filter:Linear,Linear
+pma:true
+01
+bounds:316,76,218,168
+offsets:14,6,253,196
+02
+bounds:2,2,312,242
+offsets:20,8,361,280
+03
+bounds:2,246,455,348
+offsets:3,3,497,386
