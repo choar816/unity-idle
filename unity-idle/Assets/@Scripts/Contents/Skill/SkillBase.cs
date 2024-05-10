@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Spine;
@@ -109,4 +110,24 @@ public abstract class SkillBase : InitBase
     }
 
     protected abstract void OnAttackEvent();
+
+    public virtual void GenerateAoE(Vector3 spawnPos)
+    {
+        AoEBase aoe = null;
+        int id = SkillData.AoEId;
+        string className = Managers.Data.AoEDic[id].ClassName;
+
+        Type componentType = Type.GetType(className);
+
+        if (componentType == null)
+        {
+            Debug.LogError("AoE Type not found: " + className);
+            return;
+        }
+
+        GameObject go = Managers.Object.SpawnGameObject(spawnPos, "AoE");
+        go.name = Managers.Data.AoEDic[id].ClassName;
+        aoe = go.AddComponent(componentType) as AoEBase;
+        aoe.SetInfo(SkillData.AoEId, Owner, this);
+    }
 }
