@@ -66,8 +66,8 @@ public class Stage : MonoBehaviour
 
     public void LoadStage()
     {
-        if (IsActive)
-            return;
+        //if (IsActive)
+        //    return;
 
         IsActive = true;
         gameObject.SetActive(true);
@@ -76,8 +76,8 @@ public class Stage : MonoBehaviour
 
     public void UnLoadStage()
     {
-        if (IsActive == false)
-            return;
+        //if (IsActive == false)
+        //    return;
 
         IsActive = false;
         gameObject.SetActive(false);
