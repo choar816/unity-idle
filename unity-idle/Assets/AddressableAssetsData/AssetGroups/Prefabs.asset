@@ -47,12 +47,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5a40e413d750cdb44b0fe888fbf55284
-    m_Address: BaseMap
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2eb2b64b4b5754414bb92c11ccd4f6a3
     m_Address: SpellIndicator
     m_ReadOnly: 0
@@ -73,6 +67,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f8a77695e8fba4619ad7c1c978fc382d
     m_Address: AoE
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a40e413d750cdb44b0fe888fbf55284
+    m_Address: BaseMap
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
