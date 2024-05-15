@@ -1,0 +1,55 @@
+
+npc_training.png
+size: 544,168
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+npc_training_1
+  rotate: false
+  xy: 409, 9
+  size: 77, 37
+  orig: 83, 43
+  offset: 3, 3
+  index: -1
+npc_training_apple
+  rotate: false
+  xy: 196, 73
+  size: 123, 91
+  orig: 129, 97
+  offset: 3, 3
+  index: -1
+npc_training_arm_1
+  rotate: false
+  xy: 321, 92
+  size: 125, 72
+  orig: 131, 79
+  offset: 3, 4
+  index: -1
+npc_training_arm_2
+  rotate: false
+  xy: 196, 7
+  size: 108, 64
+  orig: 114, 70
+  offset: 3, 3
+  index: -1
+npc_training_base
+  rotate: false
+  xy: 2, 8
+  size: 192, 156
+  orig: 198, 162
+  offset: 3, 3
+  index: -1
+npc_training_body
+  rotate: false
+  xy: 321, 2
+  size: 86, 88
+  orig: 92, 94
+  offset: 3, 3
+  index: -1
+npc_training_head
+  rotate: false
+  xy: 448, 48
+  size: 94, 116
+  orig: 101, 122
+  offset: 4, 3
+  index: -1

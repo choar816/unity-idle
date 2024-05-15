@@ -1,0 +1,83 @@
+
+npc_camp.png
+size: 560,372
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+npc_camp_base
+  rotate: false
+  xy: 2, 9
+  size: 353, 361
+  orig: 360, 367
+  offset: 3, 3
+  index: -1
+npc_camp_base_effect_1
+  rotate: false
+  xy: 357, 20
+  size: 99, 156
+  orig: 114, 172
+  offset: 7, 9
+  index: -1
+npc_camp_flag_1
+  rotate: false
+  xy: 357, 178
+  size: 100, 48
+  orig: 106, 54
+  offset: 3, 3
+  index: -1
+npc_camp_flag_2
+  rotate: false
+  xy: 460, 231
+  size: 97, 44
+  orig: 103, 50
+  offset: 3, 3
+  index: -1
+npc_camp_flag_3
+  rotate: false
+  xy: 357, 228
+  size: 101, 47
+  orig: 107, 53
+  offset: 3, 3
+  index: -1
+npc_camp_flower_1
+  rotate: false
+  xy: 357, 277
+  size: 160, 93
+  orig: 166, 101
+  offset: 3, 3
+  index: -1
+npc_camp_flower_2
+  rotate: false
+  xy: 460, 163
+  size: 84, 66
+  orig: 91, 74
+  offset: 4, 3
+  index: -1
+npc_camp_flower_3
+  rotate: false
+  xy: 519, 309
+  size: 34, 61
+  orig: 40, 67
+  offset: 3, 3
+  index: -1
+npc_camp_grass_1
+  rotate: false
+  xy: 507, 36
+  size: 45, 43
+  orig: 51, 49
+  offset: 3, 3
+  index: -1
+npc_camp_grass_2
+  rotate: false
+  xy: 458, 2
+  size: 47, 77
+  orig: 53, 85
+  offset: 3, 5
+  index: -1
+npc_camp_grass_3
+  rotate: false
+  xy: 458, 81
+  size: 57, 80
+  orig: 63, 86
+  offset: 3, 3
+  index: -1

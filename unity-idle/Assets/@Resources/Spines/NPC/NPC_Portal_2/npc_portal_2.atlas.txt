@@ -1,0 +1,16 @@
+npc_portal_2.png
+size:188,776
+filter:Linear,Linear
+pma:true
+portal_a_body
+bounds:2,2,183,87
+offsets:3,3,189,93
+portal_a_effect_1
+bounds:2,542,166,230
+offsets:8,9,182,247
+portal_a_effect_2
+bounds:2,315,159,225
+offsets:8,8,175,241
+portal_a_effect_3
+bounds:2,91,162,222
+offsets:8,8,177,238

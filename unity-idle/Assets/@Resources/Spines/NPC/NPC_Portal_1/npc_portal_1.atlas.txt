@@ -1,0 +1,111 @@
+
+npc_portal_1.png
+size: 644,224
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+npc_portal_effect_1
+  rotate: false
+  xy: 391, 23
+  size: 53, 50
+  orig: 68, 65
+  offset: 8, 8
+  index: -1
+npc_portal_shadow
+  rotate: false
+  xy: 337, 75
+  size: 241, 33
+  orig: 247, 39
+  offset: 3, 3
+  index: -1
+portal_grass_1
+  rotate: false
+  xy: 541, 161
+  size: 29, 59
+  orig: 38, 67
+  offset: 4, 3
+  index: -1
+portal_grass_2
+  rotate: false
+  xy: 446, 20
+  size: 25, 53
+  orig: 34, 60
+  offset: 6, 3
+  index: -1
+portal_grass_3
+  rotate: false
+  xy: 364, 4
+  size: 25, 42
+  orig: 34, 52
+  offset: 3, 5
+  index: -1
+portal_grass_4
+  rotate: false
+  xy: 337, 2
+  size: 25, 44
+  orig: 31, 52
+  offset: 3, 3
+  index: -1
+portal_grass_5
+  rotate: false
+  xy: 541, 113
+  size: 27, 46
+  orig: 37, 55
+  offset: 5, 4
+  index: -1
+potal_body
+  rotate: false
+  xy: 2, 4
+  size: 231, 216
+  orig: 269, 249
+  offset: 23, 13
+  index: -1
+potal_bush_1
+  rotate: false
+  xy: 580, 48
+  size: 54, 83
+  orig: 61, 89
+  offset: 3, 3
+  index: -1
+potal_bush_2
+  rotate: false
+  xy: 580, 133
+  size: 62, 87
+  orig: 69, 95
+  offset: 3, 5
+  index: -1
+potal_bush_3
+  rotate: false
+  xy: 235, 6
+  size: 100, 102
+  orig: 107, 108
+  offset: 3, 3
+  index: -1
+potal_bush_4
+  rotate: false
+  xy: 473, 43
+  size: 29, 30
+  orig: 35, 38
+  offset: 3, 5
+  index: -1
+potal_effect_1
+  rotate: false
+  xy: 235, 110
+  size: 100, 110
+  orig: 106, 116
+  offset: 3, 3
+  index: -1
+potal_effect_2
+  rotate: false
+  xy: 337, 110
+  size: 100, 110
+  orig: 106, 116
+  offset: 3, 3
+  index: -1
+potal_effect_3
+  rotate: false
+  xy: 439, 110
+  size: 100, 110
+  orig: 106, 116
+  offset: 3, 3
+  index: -1

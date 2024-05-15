@@ -1,0 +1,8 @@
+﻿DataId,Name,DescriptionTextID,NpcType,PrefabLabel,SpriteName,SkeletonDataID
+500001,챕터1캠프,,Camp,NpcPrefab,,npc_camp_SkeletonData
+500002,챕터1포탈,,Portal,NpcPrefab,,npc_portal_2_SkeletonData
+500003,챕터1웨이포인트,,Waypoint,NpcPrefab,,npc_portal_1_SkeletonData
+500004,챕터1대장간,,BlackSmith,NpcPrefab,,npc_smith_SkeletonData
+500005,챕터1훈련소,,Guild,NpcPrefab,,npc_training_SkeletonData
+500006,보물상자,,TreasureBox,NpcPrefab,,npc_training_SkeletonData
+500007,던전,,Dungeon,NpcPrefab,,npc_training_SkeletonData

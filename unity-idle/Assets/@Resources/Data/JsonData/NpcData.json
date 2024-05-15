@@ -1,0 +1,67 @@
+{
+  "creatures": [
+    {
+      "DataId": 500001,
+      "Name": "챕터1캠프",
+      "DescriptionTextID": null,
+      "NpcType": 0,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_camp_SkeletonData"
+    },
+    {
+      "DataId": 500002,
+      "Name": "챕터1포탈",
+      "DescriptionTextID": null,
+      "NpcType": 1,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_portal_2_SkeletonData"
+    },
+    {
+      "DataId": 500003,
+      "Name": "챕터1웨이포인트",
+      "DescriptionTextID": null,
+      "NpcType": 2,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_portal_1_SkeletonData"
+    },
+    {
+      "DataId": 500004,
+      "Name": "챕터1대장간",
+      "DescriptionTextID": null,
+      "NpcType": 3,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_smith_SkeletonData"
+    },
+    {
+      "DataId": 500005,
+      "Name": "챕터1훈련소",
+      "DescriptionTextID": null,
+      "NpcType": 4,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_training_SkeletonData"
+    },
+    {
+      "DataId": 500006,
+      "Name": "보물상자",
+      "DescriptionTextID": null,
+      "NpcType": 5,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_training_SkeletonData"
+    },
+    {
+      "DataId": 500007,
+      "Name": "던전",
+      "DescriptionTextID": null,
+      "NpcType": 6,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": null,
+      "SkeletonDataID": "npc_training_SkeletonData"
+    }
+  ]
+}

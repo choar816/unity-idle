@@ -66,8 +66,8 @@ public class Stage : MonoBehaviour
 
     public void LoadStage()
     {
-        //if (IsActive)
-        //    return;
+        if (IsActive)
+            return;
 
         IsActive = true;
         gameObject.SetActive(true);
@@ -76,8 +76,8 @@ public class Stage : MonoBehaviour
 
     public void UnLoadStage()
     {
-        //if (IsActive == false)
-        //    return;
+        if (IsActive == false)
+            return;
 
         IsActive = false;
         gameObject.SetActive(false);
@@ -106,11 +106,11 @@ public class Stage : MonoBehaviour
                     env.SetCellPos(cellPos, true);
                     _spawnObjects.Add(env);
                     break;
-                //case EObjectType.Npc:
-                //    Npc npc = Managers.Object.Spawn<Npc>(worldPos, info.DataId);
-                //    npc.SetCellPos(cellPos, true);
-                //    _spawnObjects.Add(npc);
-                //    break;
+                case EObjectType.Npc:
+                    Npc npc = Managers.Object.Spawn<Npc>(worldPos, info.DataId);
+                    npc.SetCellPos(cellPos, true);
+                    _spawnObjects.Add(npc);
+                    break;
             }
         }
     }
@@ -127,9 +127,9 @@ public class Stage : MonoBehaviour
                 case EObjectType.Env:
                     Managers.Object.Despawn(obj as Env);
                     break;
-                //case EObjectType.Npc:
-                //    Managers.Object.Despawn(obj as Npc);
-                //    break;
+                case EObjectType.Npc:
+                    Managers.Object.Despawn(obj as Npc);
+                    break;
             }
         }
 
