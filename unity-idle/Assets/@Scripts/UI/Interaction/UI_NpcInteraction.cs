@@ -41,7 +41,7 @@ public class UI_NpcInteraction : UI_Base
             case Define.ENpcType.Portal:
                 break;
             case Define.ENpcType.Waypoint:
-                //Managers.UI.ShowPopupUI<UI_WaypointPopup>();
+                Managers.UI.ShowPopupUI<UI_WaypointPopup>();
                 break;
             case Define.ENpcType.BlackSmith:
                 break;

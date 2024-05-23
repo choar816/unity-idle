@@ -30,6 +30,11 @@ public class HeroCamp : BaseObject
         return true;
     }
 
+    public void ForceMove(Vector3 position)
+    {
+        transform.position = position;
+    }
+
     private void Update()
     {
         Vector3 dir = _moveDir * Time.deltaTime * Speed;
