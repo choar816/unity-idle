@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ public class UIManager
 {
     private int _order = 10;
 
+	private Dictionary<string, UI_Popup> _popups = new Dictionary<string, UI_Popup>();
     private Stack<UI_Popup> _popupStack = new Stack<UI_Popup>();
 
     private UI_Scene _sceneUI = null;
@@ -28,6 +30,20 @@ public class UIManager
                 root = new GameObject { name = "@UI_Root" };
             return root;
         }
+    }
+
+    public void CacheAllPopups()
+    {
+        var list = AppDomain.CurrentDomain.GetAssemblies()
+            .SelectMany(assembly => assembly.GetTypes())
+            .Where(type => type.IsSubclassOf(typeof(UI_Popup)));
+
+        foreach (Type type in list)
+        {
+            CachePopupUI(type);
+        }
+
+        CloseAllPopupUI();
     }
 
     public void SetCanvas(GameObject go, bool sort = true, int sortOrder = 0)
@@ -118,18 +134,38 @@ public class UIManager
         return sceneUI;
     }
 
+    public void CachePopupUI(Type type)
+    {
+        string name = type.Name;
+
+        if (_popups.TryGetValue(name, out UI_Popup popup) == false)
+        {
+            GameObject go = Managers.Resource.Instantiate(name);
+            popup = go.GetComponent<UI_Popup>();
+            _popups[name] = popup;
+        }
+
+        _popupStack.Push(popup);
+    }
+
     public T ShowPopupUI<T>(string name = null) where T : UI_Popup
     {
         if (string.IsNullOrEmpty(name))
             name = typeof(T).Name;
 
-        GameObject go = Managers.Resource.Instantiate(name);
-        T popup = Util.GetOrAddComponent<T>(go);
+        if (_popups.TryGetValue(name, out UI_Popup popup) == false)
+        {
+            GameObject go = Managers.Resource.Instantiate(name);
+            popup = Util.GetOrAddComponent<T>(go);
+            _popups[name] = popup;
+        }
+
         _popupStack.Push(popup);
 
-        go.transform.SetParent(Root.transform);
+        popup.transform.SetParent(Root.transform);
+        popup.gameObject.SetActive(true);
 
-        return popup;
+        return popup as T;
     }
 
     public void ClosePopupUI(UI_Popup popup)
@@ -152,7 +188,9 @@ public class UIManager
             return;
 
         UI_Popup popup = _popupStack.Pop();
-        Managers.Resource.Destroy(popup.gameObject);
+		popup.gameObject.SetActive(false);
+        //Managers.Resource.Destroy(popup.gameObject);
+
         _order--;
     }
 
