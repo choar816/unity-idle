@@ -193,16 +193,6 @@ public static class Define
         CleanDebuff,
     }
 
-    public enum ELanguage
-    {
-        Korean,
-        English,
-        French,
-        SimplifiedChinese,
-        TraditionalChinese,
-        Japanese
-    }
-
 
     public const float EFFECT_SMALL_RADIUS = 2.5f;
     public const float EFFECT_NORMAL_RADIUS = 4.5f;

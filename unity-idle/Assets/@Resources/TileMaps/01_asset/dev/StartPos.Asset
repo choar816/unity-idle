@@ -35,5 +35,5 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   DataId: 201000
-  Name: "\uC2AC\uB77C\uC784"
+  Name: "slime"
   isStartPos: 1

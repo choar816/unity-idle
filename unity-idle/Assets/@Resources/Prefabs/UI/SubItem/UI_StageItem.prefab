@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7133281571452345464}
   - component: {fileID: 7925632416196190680}
   - component: {fileID: 2661362549122182091}
-  - component: {fileID: 5487269465015748107}
+  - component: {fileID: 4133495357964044799}
   m_Layer: 5
   m_Name: UI_StageItem
   m_TagString: Untagged
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5487269465015748107
+--- !u!114 &4133495357964044799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3036312300992277529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f6332cc9cdd4785ae241fd12126df7, type: 3}
+  m_Script: {fileID: 11500000, guid: ae03a6b5a63abc54a82445b98f19bd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3329716185704170004
@@ -201,8 +201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bf45523bba40448b8832051c8f6719eb, type: 2}
-  m_sharedMaterial: {fileID: 5207820940069087074, guid: bf45523bba40448b8832051c8f6719eb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f3542486487c7ea4dbd868ca403eda08, type: 2}
+  m_sharedMaterial: {fileID: 5207820940069087074, guid: f3542486487c7ea4dbd868ca403eda08, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -15,77 +15,65 @@ MonoBehaviour:
   m_GroupName: Data
   m_Data:
     m_SerializedData: []
-  m_GUID: 21f35c2642e974d22ac2504b3d613157
+  m_GUID: 4ef6f93e6dc9c1540812bda65fca63fe
   m_SerializeEntries:
-  - m_GUID: 4197eece14a244d1fafde42ee5342537
-    m_Address: MonsterData
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 787cf823f765340c2abde2d24d73b036
+  - m_GUID: db7c0b011b606ab47ae392ae588559f4
     m_Address: EnvData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 67e1c8c3e54d44d8d96b6c04b237de38
+  - m_GUID: 3a5adb55a15c39642bfec4606ca19735
+    m_Address: MonsterData
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 611fe450941efec419a36130a28acc4a
     m_Address: HeroData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0e117bbe4342c4ed0aa58f0ddec00116
+  - m_GUID: eb54e0b78d8b95d4291d0f9973b8668e
     m_Address: SkillData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 86f0f32699644485bba32d9c26535828
+  - m_GUID: 843fcb5b0a70c854f8b4c9f5416e8689
     m_Address: ProjectileData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d86e67a9372df41c6b98ea8d1c8030bf
+  - m_GUID: 894df532750051b43a5df0b583b6c101
     m_Address: BaseMapCollision
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c5c74186b2c12440db78d8a7fcb7d203
+  - m_GUID: 8569ba94ff9356d4c8718f45cae0d919
     m_Address: EffectData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: de29057c148364989af7b089c71273b2
+  - m_GUID: bab46094c3b32fc4684f17ada75dd6e1
     m_Address: AoEData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b71956727c0be4c23a780f41c0f50181
+  - m_GUID: 470c369f12d38484a9dae4def96c46b8
     m_Address: NpcData
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 654c82ee308564b72be2f402f3b8c84b
-    m_Address: TextData
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c6adea19336f44051872a3593342128b
-    m_Address: HeroInfoData
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: eaf786eb249cf47ae8779ac27b17d35e, type: 2}
+  m_Settings: {fileID: 11400000, guid: 3b34cd1d0f58d714b8b4fcf9c86bdbb4, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: b33e08d60c38f45e7b92d141d34e3fe6, type: 2}
-    - {fileID: 11400000, guid: 5d3a19aa6e0df469ba548a9e63c4e36b, type: 2}
+    - {fileID: 11400000, guid: 42655c730e91c0748b6c5977bf78c513, type: 2}
+    - {fileID: 11400000, guid: c28da11849069b044b135de6e3d591e4, type: 2}

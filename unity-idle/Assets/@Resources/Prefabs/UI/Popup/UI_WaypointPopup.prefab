@@ -465,7 +465,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7404211594097656819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01783c48c76a645538f4ff89bd125127, type: 3}
+  m_Script: {fileID: 11500000, guid: 69445eb9c0c6a6d4fa6bd7a8bf82fc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7404211594160744217
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC6E8\uC774\uD3EC\uC778\uD2B8(\uD14C\uC2A4\uD2B8)"
+  m_text: "waypoint(test)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

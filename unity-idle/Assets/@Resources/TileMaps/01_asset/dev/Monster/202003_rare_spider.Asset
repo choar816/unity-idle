@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 285f7be516f497b4195285bd5539a136, type: 3}
-  m_Name: "500004_\uCC55\uD1301\uB300\uC7A5\uAC04"
+  m_Name: "202003_rare_spider"
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: b9c923444bc264e47b6ecb55566121dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b21ad71a3c677994fa4f41c7e4dcf6c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -34,8 +34,8 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  ObjectType: 4
-  DataId: 500004
-  Name: "\uCC55\uD1301\uB300\uC7A5\uAC04"
+  ObjectType: 3
+  DataId: 202003
+  Name: "rare_spider"
   isStartPos: 0
   isWayPoint: 0

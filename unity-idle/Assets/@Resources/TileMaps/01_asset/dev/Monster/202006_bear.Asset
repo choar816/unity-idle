@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 285f7be516f497b4195285bd5539a136, type: 3}
-  m_Name: "202005_\uD65C \uB4E0 \uACE0\uBE14\uB9B0"
+  m_Name: "202006_bear"
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 7bd0ae4e5272e834284e4e0e1d826395, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b84e434f50b47294eaebd8c2be0797ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   ObjectType: 3
-  DataId: 202005
-  Name: "\uD65C \uB4E0 \uACE0\uBE14\uB9B0"
+  DataId: 202006
+  Name: "bear"
   isStartPos: 0
   isWayPoint: 0

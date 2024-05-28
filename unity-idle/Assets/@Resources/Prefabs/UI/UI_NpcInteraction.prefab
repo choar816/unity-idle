@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6372634674259620056}
   - component: {fileID: 6484684811798162626}
   - component: {fileID: 5051633245730646919}
-  - component: {fileID: 7220243028530348281}
+  - component: {fileID: 3559485212412239646}
   m_Layer: 5
   m_Name: UI_NpcInteraction
   m_TagString: Untagged
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5051633245730646919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7220243028530348281
+--- !u!114 &3559485212412239646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4948233692633311286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8df804984e84950943330c8ab8da8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b42e71f6ab92a1459237938e60e14c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9181024454683725504

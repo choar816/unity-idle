@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3409054631930527976}
   - component: {fileID: 5182487736261316860}
   - component: {fileID: 621101116729802775}
-  - component: {fileID: 7704923726741298314}
+  - component: {fileID: -6431457928694800946}
   m_Layer: 6
   m_Name: Hero
   m_TagString: Untagged
@@ -189,7 +189,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7704923726741298314
+--- !u!114 &-6431457928694800946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,6 +198,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3396818193280506437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c23926161da42c19fdeb7936d6776e, type: 3}
+  m_Script: {fileID: 11500000, guid: e851d474f0268024ea8426cb7f5063c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

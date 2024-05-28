@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Prefabs
   m_Data:
     m_SerializedData: []
-  m_GUID: a481b4ddaec764d84ae98a8b4dbd2684
+  m_GUID: 8b6f37a6951c9e246bb403b67ba11597
   m_SerializeEntries:
   - m_GUID: 3a5e4b1bc5f22d243af02ab5bdf4d607
     m_Address: Hero
@@ -23,37 +23,37 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ba62e9dcc0f4d4db294a46a6d8d2590e
+  - m_GUID: 45823a6326f3b8c4ead9fbe0893db3be
     m_Address: Monster
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ebfd361b114a64e8ba8fdc88eb60652e
+  - m_GUID: ec721a68e8c259149b0cb5799ad2e2b8
     m_Address: Env
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 65e70e21cdae6453da6bea5e78c9f228
+  - m_GUID: f47c398c87ed2e841acfd50260b3a10a
     m_Address: HeroCamp
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 62c83837104fd48e1bec9e70c1591b26
+  - m_GUID: 8b1e0ccdd80d98a49a0fd17692f2e50e
     m_Address: Projectile
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2eb2b64b4b5754414bb92c11ccd4f6a3
+  - m_GUID: 17f2042330a4cd548afdf146932ebddc
     m_Address: SpellIndicator
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e9c1c0ca8228349b3b99a5fe433148b6
+  - m_GUID: 4ed5e22987842264f968e1074759fa65
     m_Address: DamageFont
     m_ReadOnly: 0
     m_SerializedLabels:
@@ -65,13 +65,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f8a77695e8fba4619ad7c1c978fc382d
+  - m_GUID: d2f797fc7888fb949b9d93c2d97cf24f
     m_Address: AoE
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: df31ec0f4e30047b0852c4dde980a799
+  - m_GUID: afab09cea2c5d3643909320b9d36a519
     m_Address: Npc
     m_ReadOnly: 0
     m_SerializedLabels:
@@ -84,8 +84,8 @@ MonoBehaviour:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: eaf786eb249cf47ae8779ac27b17d35e, type: 2}
+  m_Settings: {fileID: 11400000, guid: 3b34cd1d0f58d714b8b4fcf9c86bdbb4, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c748e404cec934a9085d99ece894f5db, type: 2}
-    - {fileID: 11400000, guid: 3367ca016f6a442ca99c7b54e0b9aa9d, type: 2}
+    - {fileID: 11400000, guid: 63561a52627407d4985d6ab0ec2fd74e, type: 2}
+    - {fileID: 11400000, guid: 82f54451240552c49ba14195654ec706, type: 2}

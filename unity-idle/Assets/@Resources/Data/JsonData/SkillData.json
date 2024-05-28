@@ -19,7 +19,7 @@
       "TargetCount": 20,
       "EffectIds": null,
       "NextLevelId": 0,
-      "AoEId": 0,
+      "AoEId": 80001,
       "EffectSize": 0
     },
     {
@@ -333,7 +333,7 @@
     {
       "DataId": 10018,
       "Name": "사자수인1",
-      "ClassName": "AreaAirborne",
+      "ClassName": "AreaAirbone",
       "Description": "자리에서 뛰어올라 바닥을 내려찍으며 자신을 중심으로 광역피해를 주고 적을 띄운다.",
       "ProjectileId": 0,
       "PrefabLabel": "SpellIndicator",

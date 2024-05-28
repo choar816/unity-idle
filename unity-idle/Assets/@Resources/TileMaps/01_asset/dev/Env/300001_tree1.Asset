@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 285f7be516f497b4195285bd5539a136, type: 3}
-  m_Name: "300001_\uB098\uBB341"
+  m_Name: "300001_tree1"
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 618fd52d67ed2ee41b3d3d8a14ff59b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -36,6 +36,6 @@ MonoBehaviour:
   m_ColliderType: 1
   ObjectType: 6
   DataId: 300001
-  Name: "\uB098\uBB341"
+  Name: "tree1"
   isStartPos: 0
   isWayPoint: 0

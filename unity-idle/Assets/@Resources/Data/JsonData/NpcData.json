@@ -2,7 +2,7 @@
   "creatures": [
     {
       "DataId": 500001,
-      "Name": "챕터1캠프",
+      "Name": "chapter1_camp",
       "DescriptionTextID": null,
       "NpcType": 0,
       "PrefabLabel": "NpcPrefab",
@@ -11,7 +11,7 @@
     },
     {
       "DataId": 500002,
-      "Name": "챕터1포탈",
+      "Name": "chapter1_portal",
       "DescriptionTextID": null,
       "NpcType": 1,
       "PrefabLabel": "NpcPrefab",
@@ -20,7 +20,7 @@
     },
     {
       "DataId": 500003,
-      "Name": "챕터1웨이포인트",
+      "Name": "chapter1_waypoint",
       "DescriptionTextID": null,
       "NpcType": 2,
       "PrefabLabel": "NpcPrefab",
@@ -29,7 +29,7 @@
     },
     {
       "DataId": 500004,
-      "Name": "챕터1대장간",
+      "Name": "chapter1_blacksmith",
       "DescriptionTextID": null,
       "NpcType": 3,
       "PrefabLabel": "NpcPrefab",
@@ -38,7 +38,7 @@
     },
     {
       "DataId": 500005,
-      "Name": "챕터1훈련소",
+      "Name": "chapter1_guild",
       "DescriptionTextID": null,
       "NpcType": 4,
       "PrefabLabel": "NpcPrefab",
@@ -47,7 +47,7 @@
     },
     {
       "DataId": 500006,
-      "Name": "보물상자",
+      "Name": "treasure_box",
       "DescriptionTextID": null,
       "NpcType": 5,
       "PrefabLabel": "NpcPrefab",
@@ -56,7 +56,7 @@
     },
     {
       "DataId": 500007,
-      "Name": "던전",
+      "Name": "dungeon",
       "DescriptionTextID": null,
       "NpcType": 6,
       "PrefabLabel": "NpcPrefab",

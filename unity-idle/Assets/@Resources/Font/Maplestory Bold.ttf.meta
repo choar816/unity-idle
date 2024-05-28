@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b268c436b4ce42fc93c93fbd9e96388
+guid: 3b9e102d28e8ecd49aef599043406954
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Sandoll Samliphopangche TTF Ba
+  - Maplestory
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

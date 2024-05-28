@@ -15,15 +15,15 @@ MonoBehaviour:
   m_GroupName: UI
   m_Data:
     m_SerializedData: []
-  m_GUID: 5ea28d64c96a24ba388f591118288f24
+  m_GUID: 3b7854348e548ae4dbc40f8559d0676b
   m_SerializeEntries:
-  - m_GUID: 55be0bf9da6464b1d8d8319d6dd2e14d
+  - m_GUID: 3a6f0d4504859514f940b12374e87992
     m_Address: UI_Joystick
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0691612e4f17249e69499dec655bf866
+  - m_GUID: 7f2b74ba02d5e81418accf0883976a76
     m_Address: UI_NpcInteraction
     m_ReadOnly: 0
     m_SerializedLabels:
@@ -35,15 +35,15 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f621c2b02bf6a4b7796d70d81f02351d
+  - m_GUID: d56f664cd78a0574588a42cb202beee3
     m_Address: UI_WaypointPopup
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: eaf786eb249cf47ae8779ac27b17d35e, type: 2}
+  m_Settings: {fileID: 11400000, guid: 3b34cd1d0f58d714b8b4fcf9c86bdbb4, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: a58c536e446cd442fb40fe36d760d5e2, type: 2}
-    - {fileID: 11400000, guid: bc4c7578d1c7042d4a7324ff47585a4e, type: 2}
+    - {fileID: 11400000, guid: f34457671d3ca944f9c929979727302c, type: 2}
+    - {fileID: 11400000, guid: bff39dbe7fd8f6148b549e39d4587cc6, type: 2}

@@ -53,12 +53,4 @@ public class GameScene : BaseScene
     {
 
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Managers.UI.ShowPopupUI<UI_WaypointPopup>();
-        }
-    }
 }

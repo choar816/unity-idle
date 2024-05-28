@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3074594540463666008}
   - component: {fileID: 4849748590888417507}
   - component: {fileID: 736857537945473514}
-  - component: {fileID: 4350942978327884505}
+  - component: {fileID: 1280256909595755613}
   m_Layer: 0
   m_Name: DamageFont
   m_TagString: Untagged
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6327707706146042653, guid: d8343300b8d034b659f18dbb153826ae, type: 2}
+  - {fileID: 6327707706146042653, guid: 5f7445fa937f7df41b8cf181bd982925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d8343300b8d034b659f18dbb153826ae, type: 2}
-  m_sharedMaterial: {fileID: 6327707706146042653, guid: d8343300b8d034b659f18dbb153826ae, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5f7445fa937f7df41b8cf181bd982925, type: 2}
+  m_sharedMaterial: {fileID: 6327707706146042653, guid: 5f7445fa937f7df41b8cf181bd982925, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &4350942978327884505
+--- !u!114 &1280256909595755613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,6 +196,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3548985269993127305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 467eaf718dc2e4930b40fc7fb4ef10ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 6645eca8db6aea84886ac535005a95f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

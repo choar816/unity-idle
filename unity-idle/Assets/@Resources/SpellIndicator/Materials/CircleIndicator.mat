@@ -42,15 +42,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Angle: 88
+    - _Angle: 108
     - _DstBlend: 1
-    - _Duration: 0.782
+    - _Duration: 0.552
     - _EnableExternalAlpha: 0
     - _FlowFade: 1
     - _Indicator: 0
     - _Intensity: 1
-    - _Outline: 1.32
-    - _OutlineAlpha: 0.5
+    - _Outline: 2.95
+    - _OutlineAlpha: 0.475
     - _Sector: 1
     - _SrcBlend: 1
     m_Colors:
