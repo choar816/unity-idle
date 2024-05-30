@@ -38,6 +38,10 @@ public class GameScene : BaseScene
 
         Managers.UI.ShowBaseUI<UI_Joystick>();
 
+        UI_GameScene sceneUI = Managers.UI.ShowSceneUI<UI_GameScene>();
+        sceneUI.GetComponent<Canvas>().sortingOrder = 1;
+        sceneUI.SetInfo();
+
         {
             //Monster monster = Managers.Object.Spawn<Monster>(new Vector3(1, 1, 0), MONSTER_BEAR_ID);
             //monster.ExtraCells = 1;

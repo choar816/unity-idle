@@ -41,6 +41,30 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bad35a8644e24c6f88a4cff8547b024
+    m_Address: UI_GameScene
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fa2813a047574bd0aecef277e12ff39
+    m_Address: UI_HeroInfoPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 695159365c5e24802b275409073865f9
+    m_Address: UI_HeroesListPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1046ac4a241ae4ddda839a1157b1e8bf
+    m_Address: UI_HeroesList_HeroItem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3b34cd1d0f58d714b8b4fcf9c86bdbb4, type: 2}
   m_SchemaSet:
