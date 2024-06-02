@@ -54,7 +54,7 @@ MonoBehaviour:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 98746b0d00a325c4ca55d94a17e00adc
-    m_Address: wizard_shot
+    m_Address: wizard_shot.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
@@ -96,7 +96,7 @@ MonoBehaviour:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cc3146a347818bc45a9d293c32669bc8
-    m_Address: goblin_shot
+    m_Address: goblin_shot.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
