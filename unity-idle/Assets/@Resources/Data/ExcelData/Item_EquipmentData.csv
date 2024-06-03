@@ -1,0 +1,6 @@
+﻿DataId,Name,GroupType,Type,SubType,Grade,MaxStack,Damage,Defence,Speed
+1,TestDaggerID,Equipment,Weapon,Dagger,Normal,1,5,0,0
+2,TestSwordID,Equipment,Weapon,Sword,Rare,1,6,0,0
+3,TestBowID,Equipment,Weapon,Bow,Epic,1,7,0,0
+4,TestHelmetID,Equipment,Armor,Helmet,Normal,1,0,2,0
+5,TestArmorID,Equipment,Armor,Armor,Normal,1,0,3,0

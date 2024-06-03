@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "Value": 3.5,
+      "CoolTime": 2,
+      "Name": "TestPotionID",
+      "ItemGroupType": 2,
+      "Type": 3,
+      "SubType": 11,
+      "Grade": 1,
+      "MaxStack": 10,
+      "DataId": 6
+    }
+  ]
+}

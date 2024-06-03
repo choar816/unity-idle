@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "Damage": 5,
+      "Defence": 0,
+      "Speed": 0,
+      "Name": "TestDaggerID",
+      "ItemGroupType": 1,
+      "Type": 1,
+      "SubType": 2,
+      "Grade": 1,
+      "MaxStack": 1,
+      "DataId": 1
+    },
+    {
+      "Damage": 6,
+      "Defence": 0,
+      "Speed": 0,
+      "Name": "TestSwordID",
+      "ItemGroupType": 1,
+      "Type": 1,
+      "SubType": 1,
+      "Grade": 2,
+      "MaxStack": 1,
+      "DataId": 2
+    },
+    {
+      "Damage": 7,
+      "Defence": 0,
+      "Speed": 0,
+      "Name": "TestBowID",
+      "ItemGroupType": 1,
+      "Type": 1,
+      "SubType": 3,
+      "Grade": 3,
+      "MaxStack": 1,
+      "DataId": 3
+    },
+    {
+      "Damage": 0,
+      "Defence": 2,
+      "Speed": 0,
+      "Name": "TestHelmetID",
+      "ItemGroupType": 1,
+      "Type": 2,
+      "SubType": 4,
+      "Grade": 1,
+      "MaxStack": 1,
+      "DataId": 4
+    },
+    {
+      "Damage": 0,
+      "Defence": 3,
+      "Speed": 0,
+      "Name": "TestArmorID",
+      "ItemGroupType": 1,
+      "Type": 2,
+      "SubType": 5,
+      "Grade": 1,
+      "MaxStack": 1,
+      "DataId": 5
+    }
+  ]
+}

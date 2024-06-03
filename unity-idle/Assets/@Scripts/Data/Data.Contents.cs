@@ -312,4 +312,53 @@ namespace Data
         }
     }
     #endregion
+
+    #region Item
+    [Serializable]
+    public class BaseData
+    {
+        public int DataId;
+    }
+
+    [Serializable]
+    public class ItemData : BaseData
+    {
+        public string Name;
+        public EItemGroupType ItemGroupType;
+        public EItemType Type;
+        public EItemSubType SubType;
+        public EItemGrade Grade;
+        public int MaxStack;
+    }
+
+    [Serializable]
+    public class EquipmentData : ItemData
+    {
+        public int Damage;
+        public int Defence;
+        public int Speed;
+    }
+
+    [Serializable]
+    public class ConsumableData : ItemData
+    {
+        public double Value;
+        public int CoolTime;
+    }
+
+    [Serializable]
+    public class ItemDataLoader<T> : ILoader<int, T> where T : BaseData
+    {
+        public List<T> items = new List<T>();
+
+        public Dictionary<int, T> MakeDict()
+        {
+            Dictionary<int, T> dict = new Dictionary<int, T>();
+            foreach (T item in items)
+                dict.Add(item.DataId, item);
+
+            return dict;
+        }
+    }
+    #endregion
 }

@@ -203,6 +203,52 @@ public static class Define
         Japanese
     }
 
+    public enum EItemGrade
+    {
+        None,
+        Normal,
+        Rare,
+        Epic,
+        Legendary
+    }
+
+    public enum EItemGroupType
+    {
+        None,
+        Equipment,
+        Consumable,
+    }
+
+    public enum EItemType
+    {
+        None,
+        Weapon,
+        Armor,
+        Potion,
+        Scroll
+    }
+
+    public enum EItemSubType
+    {
+        None,
+
+        Sword,
+        Dagger,
+        Bow,
+
+        Helmet,
+        Armor,
+        Shield,
+        Gloves,
+        Shoes,
+
+        EnchantWeapon,
+        EnchantArmor,
+
+        HealthPotion,
+        ManaPotion,
+    }
+
 
     public const float EFFECT_SMALL_RADIUS = 2.5f;
     public const float EFFECT_NORMAL_RADIUS = 4.5f;

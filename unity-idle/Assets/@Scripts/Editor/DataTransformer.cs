@@ -42,6 +42,9 @@ public class DataTransformer : EditorWindow
         ParseExcelDataToJson<NpcDataLoader, NpcData>("Npc");
         ParseExcelDataToJson<TextDataLoader, TextData>("Text");
 
+        ParseExcelDataToJson<ItemDataLoader<EquipmentData>, EquipmentData>("Item_Equipment");
+        ParseExcelDataToJson<ItemDataLoader<ConsumableData>, ConsumableData>("Item_Consumable");
+
         Debug.Log("DataTransformer Completed");
     }
 

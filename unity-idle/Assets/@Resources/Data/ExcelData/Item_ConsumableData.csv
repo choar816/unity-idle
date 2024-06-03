@@ -1,0 +1,2 @@
+﻿DataId,Name,GroupType,Type,SubType,Grade,MaxStack,Value,Cooltime
+6,TestPotionID,Consumable,Potion,HealthPotion,Normal,10,3.5,2
