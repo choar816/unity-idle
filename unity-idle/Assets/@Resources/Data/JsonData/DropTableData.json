@@ -1,0 +1,18 @@
+{
+  "dropTables": [
+    {
+      "DataId": 400000,
+      "RewardExp": 0,
+      "Prob1": 50,
+      "Item1": 1,
+      "Prob2": 10,
+      "Item2": 2,
+      "Prob3": 0,
+      "Item3": 0,
+      "Prob4": 0,
+      "Item4": 0,
+      "Prob5": 0,
+      "Item5": 0
+    }
+  ]
+}
