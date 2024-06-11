@@ -166,10 +166,8 @@ public class Monster : Creature
             itemHolder.SetInfo(0, rewardData.ItemTemplateId, dropPos);
         }
 
-        // Check Quest
-        // var list = QuestManager.ProcessingQuestList();
-        // foreach (var quest in list)
-        // { // }
+        // Broadcast
+        Managers.Game.BroadcastEvent(EBroadcastEventType.KillMonster, MonsterData.DataId);
 
         Managers.Object.Despawn(this);
     }
