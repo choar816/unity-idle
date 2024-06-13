@@ -8,8 +8,7 @@
       "ResourceAmount": 1,
       "RegenTime": 60.0,
       "SkeletonDataIDs": [
-        "wood_1_SkeletonData",
-        "wood_2_SkeletonData"
+        "wood_1_SkeletonData&wood_2_SkeletonData"
       ],
       "DropItemId": 400100
     },
@@ -21,8 +20,7 @@
       "ResourceAmount": 1,
       "RegenTime": 60.0,
       "SkeletonDataIDs": [
-        "wood_1_SkeletonData",
-        "wood_2_SkeletonData"
+        "wood_1_SkeletonData&wood_2_SkeletonData"
       ],
       "DropItemId": 400200
     }

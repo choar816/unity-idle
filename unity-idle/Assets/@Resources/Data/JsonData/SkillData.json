@@ -17,7 +17,7 @@
       "SkillRange": 0.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -39,7 +39,7 @@
       "SkillRange": 0.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -61,7 +61,7 @@
       "SkillRange": 0.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -83,7 +83,7 @@
       "SkillRange": 3.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -105,7 +105,7 @@
       "SkillRange": 5.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -127,7 +127,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -149,7 +149,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -171,7 +171,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10009,
       "AoEId": 80001,
       "EffectSize": 0
@@ -193,7 +193,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10010,
       "AoEId": 80002,
       "EffectSize": 1
@@ -215,7 +215,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 80003,
       "EffectSize": 2
@@ -237,7 +237,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10012,
       "AoEId": 80004,
       "EffectSize": 0
@@ -259,7 +259,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10013,
       "AoEId": 80005,
       "EffectSize": 1
@@ -281,7 +281,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 80006,
       "EffectSize": 2
@@ -303,7 +303,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -325,7 +325,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 0,
       "EffectSize": 0
@@ -372,9 +372,7 @@
       "ScaleMultiplier": 1.0,
       "TargetCount": 3,
       "EffectIds": [
-        61003,
-        61005,
-        61007
+        61003
       ],
       "NextLevelId": 0,
       "AoEId": 0,
@@ -397,7 +395,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10021,
       "AoEId": 80007,
       "EffectSize": 5
@@ -419,7 +417,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10022,
       "AoEId": 80008,
       "EffectSize": 5
@@ -441,7 +439,7 @@
       "SkillRange": 1.8,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 80009,
       "EffectSize": 5
@@ -463,7 +461,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10024,
       "AoEId": 80010,
       "EffectSize": 2
@@ -485,7 +483,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 10025,
       "AoEId": 80011,
       "EffectSize": 2
@@ -507,7 +505,7 @@
       "SkillRange": 4.0,
       "ScaleMultiplier": 1.0,
       "TargetCount": 20,
-      "EffectIds": null,
+      "EffectIds": [],
       "NextLevelId": 0,
       "AoEId": 80012,
       "EffectSize": 2

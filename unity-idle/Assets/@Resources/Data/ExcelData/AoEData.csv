@@ -17,6 +17,6 @@
 80016,인형의 브레스 1,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60012,skill_a_small
 80017,인형의 브레스 2,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60013,skill_a_normal
 80018,인형의 브레스 3,ConeShapeAoE,owen_skill_1_SkeletonData,,,,60014,skill_a_big
-80019,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_small
-80020,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_normal
-80021,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001&61005,,skill_a_big
+80019,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001,,skill_a_small
+80020,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001,,skill_a_normal
+80021,권법연타 AoE,CircleShapeAoE,veti_skill_1_SkeletonData,,,61001,,skill_a_big

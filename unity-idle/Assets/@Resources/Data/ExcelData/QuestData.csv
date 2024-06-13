@@ -1,0 +1,13 @@
+﻿DataId,Name,DescriptionTextId,QuestPeriodType,QuestTask.ObjectiveType,QuestTask.ObjectiveDataId,QuestTask.Count,Reward.RewardType,Reward.RewardDataId,Reward.Count
+1,클로이 구하기,EarnedMeatObjectiveDescription,Once,SpendMeat,0,10,Hero,201000,1
+,,,,,,,Gold,0,100
+,,,,,,,Mineral,0,100
+,,,,,,,Wood,0,100
+,,,,,,,Meat,0,100
+2,몬스터죽이기,KilledMonsterDescription,Daily,KillMonster,0,10,Gold,0,100
+3,몬스터죽이기,KilledMonsterDescription,Weekly,KillMonster,0,10,Mineral,0,100
+4,골드모으기,EarnedGoldObjectiveDescription,Daily,EarnMeat,0,10,Gold,0,120
+5,골드모으기,EarnedGoldObjectiveDescription,Daily,EarnMeat,0,100,Wood,0,10
+6,식량모으기,EarnedMeatObjectiveDescription,Daily,EarnMeat,0,10,Gold,0,100
+7,식량모으기,EarnedMeatObjectiveDescription,Daily,EarnMeat,0,20,Gold,0,100
+8,던전클리어,dungeon,Once,ClearDungeon,0,1,Gold,0,100

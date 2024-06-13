@@ -4,64 +4,131 @@
       "DataId": 500001,
       "Name": "chapter1_camp",
       "DescriptionTextID": null,
-      "NpcType": 0,
+      "NpcType": 2,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_camp_SkeletonData"
+      "SpriteName": "npc_camp_base.sprite",
+      "SkeletonDataID": "camp_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500002,
       "Name": "chapter1_portal",
       "DescriptionTextID": null,
-      "NpcType": 1,
+      "NpcType": 3,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_portal_2_SkeletonData"
+      "SpriteName": "portal_a_effect_1.sprite",
+      "SkeletonDataID": "npc_portal_2_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500003,
       "Name": "chapter1_waypoint",
       "DescriptionTextID": null,
-      "NpcType": 2,
+      "NpcType": 4,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_portal_1_SkeletonData"
+      "SpriteName": "potal_body.sprite",
+      "SkeletonDataID": "npc_portal_1_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500004,
       "Name": "chapter1_blacksmith",
       "DescriptionTextID": null,
-      "NpcType": 3,
+      "NpcType": 5,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_smith_SkeletonData"
+      "SpriteName": "smith_body.sprite",
+      "SkeletonDataID": "npc_smith_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500005,
       "Name": "chapter1_guild",
       "DescriptionTextID": null,
-      "NpcType": 4,
+      "NpcType": 6,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_training_SkeletonData"
+      "SpriteName": "npc_training_head.sprite",
+      "SkeletonDataID": "npc_training_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500006,
-      "Name": "treasure_box",
+      "Name": "teasure_box",
       "DescriptionTextID": null,
-      "NpcType": 5,
+      "NpcType": 7,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_training_SkeletonData"
+      "SpriteName": "treasure_temp.sprite",
+      "SkeletonDataID": "npc_training_SkeletonData",
+      "QuestDataId": 0
     },
     {
       "DataId": 500007,
       "Name": "dungeon",
       "DescriptionTextID": null,
-      "NpcType": 6,
+      "NpcType": 9,
       "PrefabLabel": "NpcPrefab",
-      "SpriteName": null,
-      "SkeletonDataID": "npc_training_SkeletonData"
+      "SpriteName": "dungeon_temp.sprite",
+      "SkeletonDataID": "npc_training_SkeletonData",
+      "QuestDataId": 8
+    },
+    {
+      "DataId": 500008,
+      "Name": "Chloe",
+      "DescriptionTextID": null,
+      "NpcType": 9,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "npc_chloe.sprite",
+      "SkeletonDataID": "002_SkeletonData",
+      "QuestDataId": 1
+    },
+    {
+      "DataId": 500009,
+      "Name": "저금통",
+      "DescriptionTextID": null,
+      "NpcType": 10,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "coin_storage_temp.sprite",
+      "SkeletonDataID": "npc_storages_coin_SkeletonData",
+      "QuestDataId": 0
+    },
+    {
+      "DataId": 500010,
+      "Name": "벌목소",
+      "DescriptionTextID": null,
+      "NpcType": 11,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "wood_storage_temp.sprite",
+      "SkeletonDataID": "storages_wood_SkeletonData",
+      "QuestDataId": 0
+    },
+    {
+      "DataId": 500011,
+      "Name": "광산",
+      "DescriptionTextID": null,
+      "NpcType": 12,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "mine_temp.sprite",
+      "SkeletonDataID": "npc_storages_mine_SkeletonData",
+      "QuestDataId": 0
+    },
+    {
+      "DataId": 500012,
+      "Name": "교환소",
+      "DescriptionTextID": null,
+      "NpcType": 13,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "npc_camp_base.sprite",
+      "SkeletonDataID": "npc_camp_SkeletonData",
+      "QuestDataId": 0
+    },
+    {
+      "DataId": 500013,
+      "Name": "룬스톤",
+      "DescriptionTextID": null,
+      "NpcType": 14,
+      "PrefabLabel": "NpcPrefab",
+      "SpriteName": "npc_rune_stone.sprite",
+      "SkeletonDataID": "npc_run_stone_SkeletonData",
+      "QuestDataId": 0
     }
   ]
 }

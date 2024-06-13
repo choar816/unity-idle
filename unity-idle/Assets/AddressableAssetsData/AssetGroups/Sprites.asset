@@ -107,32 +107,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b9c923444bc264e47b6ecb55566121dd
-    m_Address: smith_body
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 75f02685dfae4494b96cce29ffb2f7a0
-    m_Address: potal_body
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - PreLoad
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b091d80009718f24897584f5136a20da
-    m_Address: npc_training_head
+  - m_GUID: 653afb33924179340a3e2d914097552a
+    m_Address: npc_camp_base.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5c90b8a7f4b779445a2e18c390cce1b4
-    m_Address: portal_a_effect_1
+    m_Address: portal_a_effect_1.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 653afb33924179340a3e2d914097552a
-    m_Address: npc_camp_base
+  - m_GUID: 75f02685dfae4494b96cce29ffb2f7a0
+    m_Address: potal_body.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b091d80009718f24897584f5136a20da
+    m_Address: npc_training_head.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9c923444bc264e47b6ecb55566121dd
+    m_Address: smith_body.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
@@ -145,6 +145,48 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9456dad1f5957414ab37f3ac1e8f980e
     m_Address: Object_Meat.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7d01cd674e1041d1a976a2cd50fbc2c
+    m_Address: mine_temp.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31581a6ffd58747f098c5fa59d74b659
+    m_Address: npc_chloe.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1a268144eaf1401b84c6a69af75eb14
+    m_Address: treasure_temp.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3fc7bca5fb4ca4a068a1dafdd40e1062
+    m_Address: dungeon_temp.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e495248e04b2e4cca84b96855ae655bc
+    m_Address: coin_storage_temp.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35f03ffdc91f84aac9ae31602e5835cd
+    m_Address: wood_storage_temp.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a4c7e26994fe417786815530d617402
+    m_Address: npc_rune_stone.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

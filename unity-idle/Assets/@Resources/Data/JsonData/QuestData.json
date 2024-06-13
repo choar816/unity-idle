@@ -1,0 +1,184 @@
+{
+  "quests": [
+    {
+      "DataId": 1,
+      "Name": "클로이 구하기",
+      "DescriptionTextId": "EarnedMeatObjectiveDescription",
+      "QuestPeriodType": 0,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 2,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 0,
+          "RewardDataId": 201000,
+          "RewardCount": 1
+        },
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        },
+        {
+          "RewardType": 2,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        },
+        {
+          "RewardType": 4,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        },
+        {
+          "RewardType": 3,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    },
+    {
+      "DataId": 2,
+      "Name": "몬스터죽이기",
+      "DescriptionTextId": "KilledMonsterDescription",
+      "QuestPeriodType": 1,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 0,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    },
+    {
+      "DataId": 3,
+      "Name": "몬스터죽이기",
+      "DescriptionTextId": "KilledMonsterDescription",
+      "QuestPeriodType": 2,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 0,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 2,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    },
+    {
+      "DataId": 4,
+      "Name": "골드모으기",
+      "DescriptionTextId": "EarnedGoldObjectiveDescription",
+      "QuestPeriodType": 1,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 1,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 120
+        }
+      ]
+    },
+    {
+      "DataId": 5,
+      "Name": "골드모으기",
+      "DescriptionTextId": "EarnedGoldObjectiveDescription",
+      "QuestPeriodType": 1,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 1,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 100
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 4,
+          "RewardDataId": 0,
+          "RewardCount": 10
+        }
+      ]
+    },
+    {
+      "DataId": 6,
+      "Name": "식량모으기",
+      "DescriptionTextId": "EarnedMeatObjectiveDescription",
+      "QuestPeriodType": 1,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 1,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 10
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    },
+    {
+      "DataId": 7,
+      "Name": "식량모으기",
+      "DescriptionTextId": "EarnedMeatObjectiveDescription",
+      "QuestPeriodType": 1,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 1,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 20
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    },
+    {
+      "DataId": 8,
+      "Name": "던전클리어",
+      "DescriptionTextId": "dungeon",
+      "QuestPeriodType": 0,
+      "QuestTasks": [
+        {
+          "ObjectiveType": 11,
+          "ObjectiveDataId": 0,
+          "ObjectiveCount": 1
+        }
+      ],
+      "Rewards": [
+        {
+          "RewardType": 1,
+          "RewardDataId": 0,
+          "RewardCount": 100
+        }
+      ]
+    }
+  ]
+}

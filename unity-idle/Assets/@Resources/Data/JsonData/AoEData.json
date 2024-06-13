@@ -7,7 +7,7 @@
       "SkeletonDataID": "loren_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 5.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60006
       ],
@@ -20,7 +20,7 @@
       "SkeletonDataID": "loren_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 5.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60007
       ],
@@ -33,7 +33,7 @@
       "SkeletonDataID": "loren_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 5.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60008
       ],
@@ -46,7 +46,7 @@
       "SkeletonDataID": "loren_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.5,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60009
       ],
@@ -59,7 +59,7 @@
       "SkeletonDataID": "loren_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.5,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60010
       ],
@@ -72,7 +72,7 @@
       "SkeletonDataID": "loren_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.5,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60011
       ],
@@ -85,7 +85,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60012
       ],
@@ -98,7 +98,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60013
       ],
@@ -111,7 +111,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60014
       ],
@@ -124,8 +124,8 @@
       "SkeletonDataID": "owen_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_b_small"
     },
     {
@@ -135,8 +135,8 @@
       "SkeletonDataID": "owen_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_b_normal"
     },
     {
@@ -146,8 +146,8 @@
       "SkeletonDataID": "owen_skill_2_SkeletonData",
       "SoundLabel": null,
       "Duration": 1.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_b_big"
     },
     {
@@ -157,8 +157,8 @@
       "SkeletonDataID": "veti_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_a_small"
     },
     {
@@ -168,8 +168,8 @@
       "SkeletonDataID": "veti_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_a_normal"
     },
     {
@@ -179,8 +179,8 @@
       "SkeletonDataID": "veti_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
-      "EnemyEffects": null,
+      "AllyEffects": [],
+      "EnemyEffects": [],
       "AnimName": "skill_a_big"
     },
     {
@@ -190,7 +190,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60012
       ],
@@ -203,7 +203,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60013
       ],
@@ -216,7 +216,7 @@
       "SkeletonDataID": "owen_skill_1_SkeletonData",
       "SoundLabel": null,
       "Duration": 0.0,
-      "AllyEffects": null,
+      "AllyEffects": [],
       "EnemyEffects": [
         60014
       ],
@@ -230,10 +230,9 @@
       "SoundLabel": null,
       "Duration": 0.0,
       "AllyEffects": [
-        61001,
-        61005
+        61001
       ],
-      "EnemyEffects": null,
+      "EnemyEffects": [],
       "AnimName": "skill_a_small"
     },
     {
@@ -244,10 +243,9 @@
       "SoundLabel": null,
       "Duration": 0.0,
       "AllyEffects": [
-        61001,
-        61005
+        61001
       ],
-      "EnemyEffects": null,
+      "EnemyEffects": [],
       "AnimName": "skill_a_normal"
     },
     {
@@ -258,10 +256,9 @@
       "SoundLabel": null,
       "Duration": 0.0,
       "AllyEffects": [
-        61001,
-        61005
+        61001
       ],
-      "EnemyEffects": null,
+      "EnemyEffects": [],
       "AnimName": "skill_a_big"
     }
   ]
