@@ -21,9 +21,7 @@ public class GameSaveData
 	public int ItemDbIdGenerator = 1;
 	public List<ItemSaveData> Items = new List<ItemSaveData>();
 
-    public List<QuestSaveData> ProcessingQuests = new List<QuestSaveData>(); // 진행중
-    public List<QuestSaveData> CompletedQuests = new List<QuestSaveData>(); // 완료
-    public List<QuestSaveData> RewardedQuests = new List<QuestSaveData>(); // 보상 받음
+    public List<QuestSaveData> AllQuests = new List<QuestSaveData>();
 }
 
 [Serializable]
@@ -234,18 +232,11 @@ public class GameManager
 
         // Quest
         {
-            SaveData.ProcessingQuests.Clear();
-            SaveData.CompletedQuests.Clear();
-            SaveData.RewardedQuests.Clear();
-
-            foreach (Quest item in Managers.Quest.ProcessingQuests)
-                SaveData.ProcessingQuests.Add(item.SaveData);
-
-            foreach (Quest item in Managers.Quest.CompletedQuests)
-                SaveData.CompletedQuests.Add(item.SaveData);
-
-            foreach (Quest item in Managers.Quest.RewardedQuests)
-                SaveData.RewardedQuests.Add(item.SaveData);
+            SaveData.AllQuests.Clear();
+            foreach (Quest quest in Managers.Quest.AllQuests.Values)
+            {
+                SaveData.AllQuests.Add(quest.SaveData);
+            }
         }
 
         string jsonStr = JsonUtility.ToJson(Managers.Game.SaveData);
@@ -280,17 +271,7 @@ public class GameManager
         {
             Managers.Quest.Clear();
 
-            foreach (QuestSaveData questSaveData in data.ProcessingQuests)
-            {
-                Managers.Quest.AddQuest(questSaveData);
-            }
-
-            foreach (QuestSaveData questSaveData in data.CompletedQuests)
-            {
-                Managers.Quest.AddQuest(questSaveData);
-            }
-
-            foreach (QuestSaveData questSaveData in data.RewardedQuests)
+            foreach (QuestSaveData questSaveData in data.AllQuests)
             {
                 Managers.Quest.AddQuest(questSaveData);
             }

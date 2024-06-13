@@ -36,8 +36,6 @@ public class UI_NpcInteraction : UI_Base
     {
         switch (_owner.Data.NpcType)
         {
-            case Define.ENpcType.Camp:
-                break;
             case Define.ENpcType.Portal:
                 break;
             case Define.ENpcType.Waypoint:
