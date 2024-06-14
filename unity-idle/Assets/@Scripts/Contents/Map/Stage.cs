@@ -26,7 +26,7 @@ public class Stage : MonoBehaviour
 {
     [SerializeField]
     private List<BaseObject> _spawnObjects = new List<BaseObject>();
-    private List<ObjectSpawnInfo> _spawnInfos = new List<ObjectSpawnInfo>();
+	public List<ObjectSpawnInfo> SpawnInfos = new List<ObjectSpawnInfo>();
 
     private ObjectSpawnInfo _startSpawnInfo;
     public ObjectSpawnInfo StartSpawnInfo
@@ -90,13 +90,10 @@ public class Stage : MonoBehaviour
     
     private void SpawnObjects()
     {
-        foreach (ObjectSpawnInfo info in _spawnInfos)
+        foreach (ObjectSpawnInfo info in SpawnInfos)
         {
             Vector3 worldPos = info.WorldPos;
             Vector3Int cellPos = info.CellPos;
-            
-            if (Managers.Map.CanGo(null, cellPos) == false)
-                return;
             
             switch (info.ObjectType)
             {
@@ -170,7 +167,7 @@ public class Stage : MonoBehaviour
                     WaypointSpawnInfo = info;
                 }
 
-                _spawnInfos.Add(info);
+                SpawnInfos.Add(info);
             }
         }
     }

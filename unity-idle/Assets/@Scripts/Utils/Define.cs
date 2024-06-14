@@ -339,6 +339,16 @@ public static class Define
         QuestClear,
     }
 
+    public enum EResourceType
+    {
+        Wood,
+        Mineral,
+        Meat,
+        Gold,
+        Materials,
+        Dia
+    }
+
 
     public const float EFFECT_SMALL_RADIUS = 2.5f;
     public const float EFFECT_NORMAL_RADIUS = 4.5f;
