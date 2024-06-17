@@ -16,12 +16,10 @@ public class GameSaveData
     public int Meat = 0;
     public int Gold = 0;
 
-	public List<HeroSaveData> Heroes = new List<HeroSaveData>();
-
 	public int ItemDbIdGenerator = 1;
 	public List<ItemSaveData> Items = new List<ItemSaveData>();
-
     public List<QuestSaveData> AllQuests = new List<QuestSaveData>();
+	public List<HeroSaveData> Heroes = new List<HeroSaveData>();
 }
 
 [Serializable]
@@ -30,14 +28,7 @@ public class HeroSaveData
     public int DataId = 0;
     public int Level = 1;
     public int Exp = 0;
-	public HeroOwningState OwningState = HeroOwningState.Unowned;
-}
-
-public enum HeroOwningState
-{
-    Unowned,
-    Owned,
-    Picked,
+	public EHeroOwningState OwningState = EHeroOwningState.Unowned;
 }
 
 [Serializable]
@@ -190,9 +181,9 @@ public class GameManager
 
     public List<HeroSaveData> AllHeroes { get { return _saveData.Heroes; } }
     public int TotalHeroCount { get { return _saveData.Heroes.Count; } }
-    public int UnownedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == HeroOwningState.Unowned).Count(); } }
-    public int OwnedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == HeroOwningState.Owned).Count(); } }
-    public int PickedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == HeroOwningState.Picked).Count(); } }
+    public int UnownedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == EHeroOwningState.Unowned).Count(); } }
+    public int OwnedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == EHeroOwningState.Owned).Count(); } }
+    public int PickedHeroCount { get { return _saveData.Heroes.Where(h => h.OwningState == EHeroOwningState.Picked).Count(); } }
 
     public int GenerateItemDbId()
     {
@@ -315,8 +306,8 @@ public class GameManager
         }
 
         // TEMP
-        SaveData.Heroes[0].OwningState = HeroOwningState.Picked;
-        SaveData.Heroes[1].OwningState = HeroOwningState.Owned;
+        SaveData.Heroes[0].OwningState = EHeroOwningState.Picked;
+        SaveData.Heroes[1].OwningState = EHeroOwningState.Owned;
 
         Wood = 100;
         Gold = 100;
@@ -327,6 +318,13 @@ public class GameManager
     public void SaveGame()
     {
         // Hero
+        {
+            SaveData.Heroes.Clear();
+            foreach (var heroinfo in Managers.Hero.AllHeroInfos.Values)
+            {
+                SaveData.Heroes.Add(heroinfo.SaveData);
+            }
+        }
 
         // Item
         {
@@ -361,6 +359,16 @@ public class GameManager
             Managers.Game.SaveData = data;
 
         // Hero
+        {
+            Managers.Hero.AllHeroInfos.Clear();
+
+            foreach (var saveData in data.Heroes)
+            {
+                Managers.Hero.AddHeroInfo(saveData);
+            }
+
+            Managers.Hero.AddUnknownHeroes();
+        }
 
         // Item
         {

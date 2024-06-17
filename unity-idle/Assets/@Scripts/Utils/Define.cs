@@ -33,6 +33,13 @@ public static class Define
         Max,
     }
 
+    public enum EHeroOwningState
+    {
+        Unowned,
+        Owned,
+        Picked,
+    }
+
     public enum EObjectType
     {
         None,
