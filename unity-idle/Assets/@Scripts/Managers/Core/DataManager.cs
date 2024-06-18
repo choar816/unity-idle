@@ -7,6 +7,7 @@ using UnityEngine;
 public interface ILoader<Key, Value>
 {
     Dictionary<Key, Value> MakeDict();
+    //bool Validate();
 }
 
 public class DataManager
@@ -38,7 +39,10 @@ public class DataManager
         EnvDic = LoadJson<Data.EnvDataLoader, int, Data.EnvData>("EnvData").MakeDict();
 		EffectDic = LoadJson<Data.EffectDataLoader, int, Data.EffectData>("EffectData").MakeDict();
 		AoEDic = LoadJson<Data.AoEDataLoader, int, Data.AoEData>("AoEData").MakeDict();
-		NpcDic = LoadJson<Data.NpcDataLoader, int, Data.NpcData>("NpcData").MakeDict();
+
+        Data.NpcDataLoader npcDataLoader = LoadJson<Data.NpcDataLoader, int, Data.NpcData>("NpcData");
+        NpcDic = npcDataLoader.MakeDict();
+
         TextDic = LoadJson<Data.TextDataLoader, string, Data.TextData>("TextData").MakeDict();
         EquipmentDic = LoadJson<Data.ItemDataLoader<Data.EquipmentData>, int, Data.EquipmentData>("Item_EquipmentData").MakeDict();
         ConsumableDic = LoadJson<Data.ItemDataLoader<Data.ConsumableData>, int, Data.ConsumableData>("Item_ConsumableData").MakeDict();
@@ -52,6 +56,9 @@ public class DataManager
 
         foreach (var item in ConsumableDic)
             ItemDic.Add(item.Key, item.Value);
+
+        // Validation
+        npcDataLoader.Validate();
     }
 
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>

@@ -276,6 +276,28 @@ namespace Data
         public string SpriteName;
         public string SkeletonDataID;
 		public int QuestDataId;
+
+        public bool Validate()
+        {
+            bool validate = true;
+
+            if (Managers.Data.TextDic.TryGetValue(Name, out var nameText) == false)
+            {
+                validate = false;
+            }
+
+            if (Managers.Data.TextDic.TryGetValue(DescriptionTextID, out var descText) == false)
+            {
+                validate = false;
+            }
+
+            if (Managers.Data.QuestDic.TryGetValue(QuestDataId, out var quest) == false)
+            {
+                validate = false;
+            }
+
+            return validate;
+        }
     }
 
     [Serializable]
@@ -288,6 +310,21 @@ namespace Data
             foreach (NpcData creature in creatures)
                 dict.Add(creature.DataId, creature);
             return dict;
+        }
+
+        public bool Validate()
+        {
+            bool validate = true;
+
+            foreach (NpcData creature in creatures)
+            {
+                if (creature.Validate() == false)
+                {
+                    validate = false;
+                }
+            }
+
+            return validate;
         }
     }
     #endregion
