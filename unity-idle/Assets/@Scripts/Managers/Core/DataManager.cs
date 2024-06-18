@@ -58,7 +58,7 @@ public class DataManager
             ItemDic.Add(item.Key, item.Value);
 
         // Validation
-        npcDataLoader.Validate();
+        //npcDataLoader.Validate();
     }
 
     private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>
