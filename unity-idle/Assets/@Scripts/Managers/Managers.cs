@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Managers : MonoBehaviour
 {
-	public static bool Initialized { get; set; } = false;
+    public static bool Initialized { get; set; } = false;
 
     private static Managers s_instance;
-    private static Managers Instance { get { Init(); return s_instance; } }
+    public static Managers Instance { get { Init(); return s_instance; } }
 
     #region Contents
     private GameManager _game = new GameManager();
@@ -19,10 +19,10 @@ public class Managers : MonoBehaviour
 
     public static GameManager Game { get { return Instance?._game; } }
     public static ObjectManager Object { get { return Instance?._object; } }
-	public static MapManager Map { get { return Instance?._map; } }
-	public static InventoryManager Inventory { get { return Instance?._inventory; } }
-	public static QuestManager Quest { get { return Instance?._quest; } }
-	public static HeroManager Hero { get { return Instance?._hero; } }
+    public static MapManager Map { get { return Instance?._map; } }
+    public static InventoryManager Inventory { get { return Instance?._inventory; } }
+    public static QuestManager Quest { get { return Instance?._quest; } }
+    public static HeroManager Hero { get { return Instance?._hero; } }
     #endregion
 
     #region Core
@@ -32,6 +32,7 @@ public class Managers : MonoBehaviour
     private SceneManagerEx _scene = new SceneManagerEx();
     private SoundManager _sound = new SoundManager();
     private UIManager _ui = new UIManager();
+    private WebManager _web = new WebManager();
 
     public static DataManager Data { get { return Instance?._data; } }
     public static PoolManager Pool { get { return Instance?._pool; } }
@@ -39,6 +40,7 @@ public class Managers : MonoBehaviour
     public static SceneManagerEx Scene { get { return Instance?._scene; } }
     public static SoundManager Sound { get { return Instance?._sound; } }
     public static UIManager UI { get { return Instance?._ui; } }
+	public static WebManager Web { get {  return Instance?._web; } }
     #endregion
 
     #region Language
@@ -92,7 +94,8 @@ public class Managers : MonoBehaviour
             // 초기화
             s_instance = go.GetComponent<Managers>();
 
-			s_instance._quest.Init();
+            s_instance._quest.Init();
+			s_instance._web.Init();
         }
     }
 }
