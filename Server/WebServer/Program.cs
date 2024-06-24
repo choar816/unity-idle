@@ -1,4 +1,6 @@
 
+using WebServer.Services;
+
 namespace WebServer
 {
     public class Program
@@ -13,6 +15,10 @@ namespace WebServer
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Services
+            builder.Services.AddSingleton<AccountService>();
+            //builder.Services.AddScoped<AccountService>();
 
             var app = builder.Build();
 
