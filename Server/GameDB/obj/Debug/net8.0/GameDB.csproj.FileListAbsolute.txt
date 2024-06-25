@@ -1,0 +1,15 @@
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\bin\Debug\net8.0\GameDB.deps.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\bin\Debug\net8.0\GameDB.runtimeconfig.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\bin\Debug\net8.0\GameDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\bin\Debug\net8.0\GameDB.pdb
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.csproj.AssemblyReference.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.AssemblyInfoInputs.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.AssemblyInfo.cs
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.csproj.CoreCompileInputs.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.sourcelink.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\refint\GameDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.pdb
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\GameDB.genruntimeconfig.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\GameDB\obj\Debug\net8.0\ref\GameDB.dll
