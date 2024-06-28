@@ -356,6 +356,14 @@ public static class Define
         Dia
     }
 
+    public enum EProviderType
+    {
+        None = 0,
+        Guest = 1,
+        Google = 2,
+        Facebook = 3,
+    }
+
 
     public const float EFFECT_SMALL_RADIUS = 2.5f;
     public const float EFFECT_NORMAL_RADIUS = 4.5f;

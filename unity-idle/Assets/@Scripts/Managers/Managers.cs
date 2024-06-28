@@ -16,6 +16,7 @@ public class Managers : MonoBehaviour
     private InventoryManager _inventory = new InventoryManager();
     private QuestManager _quest = new QuestManager();
     private HeroManager _hero = new HeroManager();
+    private AuthManager _auth = new AuthManager();
 
     public static GameManager Game { get { return Instance?._game; } }
     public static ObjectManager Object { get { return Instance?._object; } }
@@ -23,6 +24,7 @@ public class Managers : MonoBehaviour
     public static InventoryManager Inventory { get { return Instance?._inventory; } }
     public static QuestManager Quest { get { return Instance?._quest; } }
     public static HeroManager Hero { get { return Instance?._hero; } }
+    public static AuthManager Auth { get { return Instance?._auth; } }
     #endregion
 
     #region Core
