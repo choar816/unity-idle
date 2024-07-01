@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GameDB")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AccountDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+595beb7417cb81518c1bcf066e107be39d8e4ba4")]
-[assembly: System.Reflection.AssemblyProductAttribute("GameDB")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GameDB")]
+[assembly: System.Reflection.AssemblyProductAttribute("AccountDB")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AccountDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.

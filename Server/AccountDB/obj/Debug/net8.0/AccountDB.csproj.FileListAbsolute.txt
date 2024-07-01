@@ -1,0 +1,15 @@
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\bin\Debug\net8.0\AccountDB.deps.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\bin\Debug\net8.0\AccountDB.runtimeconfig.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\bin\Debug\net8.0\AccountDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\bin\Debug\net8.0\AccountDB.pdb
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.csproj.AssemblyReference.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.AssemblyInfoInputs.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.AssemblyInfo.cs
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.csproj.CoreCompileInputs.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.sourcelink.json
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\refint\AccountDB.dll
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.pdb
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\AccountDB.genruntimeconfig.cache
+C:\Users\ahra.cho\Documents\unity-idle\Server\AccountDB\obj\Debug\net8.0\ref\AccountDB.dll
