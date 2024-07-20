@@ -9,6 +9,8 @@ public class Managers : MonoBehaviour
     private static Managers s_instance;
     public static Managers Instance { get { Init(); return s_instance; } }
 
+    public static string Jwt { get; set; }
+
     #region Contents
     private GameManager _game = new GameManager();
     private ObjectManager _object = new ObjectManager();

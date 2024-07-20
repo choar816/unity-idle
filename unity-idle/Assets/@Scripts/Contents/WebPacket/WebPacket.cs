@@ -34,4 +34,17 @@ namespace WebPacket
         public long accountDbId;
         public string jwt;
     }
+
+    [Serializable]
+    public class UpdateRankingPacketReq
+    {
+        public string jwt;
+        public int score;
+    }
+
+    [Serializable]
+    public class UpdateRankingPacketRes
+    {
+        public bool success;
+    }
 }

@@ -68,12 +68,35 @@ public class UI_LoginScene : UI_Scene
                 Debug.Log($"AccountDbId: {res.accountDbId}");
                 Debug.Log($"JWT: {res.jwt}");
 
+                Managers.Jwt = res.jwt;
+
                 // TODO
-                Debug.Log("Try to Connect to GameServer...");
+                UpdateRank();
             }
             else
             {
                 Debug.Log("Login Failed");
+            }
+        });
+    }
+
+    void UpdateRank()
+    {
+        UpdateRankingPacketReq req = new UpdateRankingPacketReq()
+        {
+            jwt = Managers.Jwt,
+            score = 100
+        };
+
+        Managers.Web.SendPostRequest<UpdateRankingPacketRes>("api/ranking/update", req, (res) =>
+        {
+            if (res.success)
+            {
+                Debug.Log("UpdateRanking Success");
+            }
+            else
+            {
+                Debug.Log("UpdateRanking Failed");
             }
         });
     }
